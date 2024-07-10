@@ -4,11 +4,6 @@ const Main_sec = () => {
   return (
     <section>
       <div className="relative min-h-120vh w-full">
-        {/* <Image
-          fill
-          className="h-full -z-10 absolute fill-inherit object-cover"
-          src={"/DEATHLOOP-main-mobile.jpg"}
-        /> */}
         <picture>
           <source
             srcSet="/DEATHLOOP-main-mobile.jpg"
@@ -35,10 +30,10 @@ const Main_sec = () => {
               <Image fill alt="logo" src={"/DEATHLOOP-logo-main.png"} />
             </div>
             <div className="flex items-center flex-col">
-              <button className=" bg-deathloop_orange transition ease-out delay-150 py-3 px-12 m-3 hover:bg-deathloop_orange_hover min-w-20 max-w-52">
+              <button className=" bg-deathloop_orange transition ease-out duration-300 py-3 px-12 m-3 hover:bg-deathloop_orange_hover min-w-20 max-w-52">
                 the button
               </button>
-              <button className=" bg-deathloop_orange py-3 px-12 m-3 ease-out delay-150 hover:bg-deathloop_orange_hover min-w-20 max-w-52">
+              <button className=" bg-deathloop_orange py-3 px-12 m-3 ease-out duration-300 hover:bg-deathloop_orange_hover min-w-20 max-w-52">
                 the very longer button
               </button>
             </div>
@@ -126,19 +121,37 @@ const Main_sec = () => {
 const Xbox_sec = () => {
   return (
     <section>
-      <div>
+      <div className="flex flex-col xbox ">
         <div>
-          <h2>
+          <h3 className="">
             Available Now on Xbox. Play it with Xbox Game Pass and PC Game Pass
-          </h2>
+          </h3>
           <p>
             Arkane's most highly-lauded game is now available on Xbox Series
             X|S! "DEATHLOOP" transports players to the lawless island of
             Blackreef in an eternal struggle between two extraordinary
             assassins.
           </p>
+          <button className="text-black bg-white transition ease-out duration-300 py-3 px-12 m-3 hover:bg-gray-400 min-w-20 max-w-52">
+            the button
+          </button>
         </div>
-        <div></div>
+        <div className="relative my-10 flex justify-center px-52 align-middle mx-auto max-w-96 max-h-80 w-full h-64 hover:-translate-y-2 hover:shadow-round transition duration-300">
+          <div className="z-10 bg-gradient-to-b from-black to-transparent  h-10 w-full absolute"></div>
+          <Image fill className="w-full h-full" src={"/deathloop-xbox.jpg "} />
+
+          <div className="text-gray-50 z-10 pl-10 font-bold bg-gradient-to-t from-black to-transparent h-20 w-full bottom-0 absolute">
+            {/* <svg
+              class="bnetGame-MuiSvgIcon-root bnetGame-bnetGame65219"
+              focusable="false"
+              viewBox="0 0 22 22"
+              aria-hidden="true"
+            >
+              <path d="M8 5v14l11-7z"></path>
+            </svg> */}
+            OFFICIAL XBOX LAUNCHER TRAILER
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -148,6 +161,7 @@ export default function Home() {
   return (
     <main className="">
       <Main_sec />
+      <Xbox_sec />
     </main>
   );
 }

@@ -28,6 +28,9 @@ module.exports = {
         "120vh": "120vh",
         "40vh": "40vh",
       },
+      boxShadow: {
+        round: "0px 25px 17px -6px rgba(0, 0, 0, .2)",
+      },
     },
   },
   plugins: [],
