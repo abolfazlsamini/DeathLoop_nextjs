@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
-
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Main_sec = () => {
   return (
     <section>
@@ -121,9 +123,9 @@ const Main_sec = () => {
 const Xbox_sec = () => {
   return (
     <section>
-      <div className="flex flex-col xbox ">
-        <div>
-          <h3 className="">
+      <div className="flex flex-col sm:flex-row-reverse xbox bg-deathloop_green">
+        <div className="w-full sm:my-10 pt-52 sm:py-5 px-5">
+          <h3 className="uppercase ">
             Available Now on Xbox. Play it with Xbox Game Pass and PC Game Pass
           </h3>
           <p>
@@ -136,24 +138,151 @@ const Xbox_sec = () => {
             the button
           </button>
         </div>
-        <div className="relative my-10 flex justify-center px-52 align-middle mx-auto max-w-96 max-h-80 w-full h-64 hover:-translate-y-2 hover:shadow-round transition duration-300">
-          <div className="z-10 bg-gradient-to-b from-black to-transparent  h-10 w-full absolute"></div>
-          <Image fill className="w-full h-full" src={"/deathloop-xbox.jpg "} />
-
-          <div className="text-gray-50 z-10 pl-10 font-bold bg-gradient-to-t from-black to-transparent h-20 w-full bottom-0 absolute">
-            {/* <svg
-              class="bnetGame-MuiSvgIcon-root bnetGame-bnetGame65219"
-              focusable="false"
-              viewBox="0 0 22 22"
-              aria-hidden="true"
-            >
-              <path d="M8 5v14l11-7z"></path>
-            </svg> */}
-            OFFICIAL XBOX LAUNCHER TRAILER
+        <div className="flex justify-center align-middle sm:mx-5 w-full my-5 sm:my-10">
+          <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+            <div className="z-10 bg-gradient-to-b max-w-3xl rounded-md from-black to-transparent h-1/3 w-full absolute">
+              <span className="flex py-2 text-slate-50 bg-youtube_red w-20 rounded-md items-center m-auto">
+                <svg
+                  class=" size-9 m-1"
+                  focusable="false"
+                  fill="white"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <rect class="frame" x="50" y="50" width="50" height="50" />
+                  <path d="M15.841 4.8c0 0-0.156-1.103-0.637-1.587-0.609-0.637-1.291-0.641-1.603-0.678-2.237-0.163-5.597-0.163-5.597-0.163h-0.006c0 0-3.359 0-5.597 0.163-0.313 0.038-0.994 0.041-1.603 0.678-0.481 0.484-0.634 1.587-0.634 1.587s-0.159 1.294-0.159 2.591v1.213c0 1.294 0.159 2.591 0.159 2.591s0.156 1.103 0.634 1.588c0.609 0.637 1.409 0.616 1.766 0.684 1.281 0.122 5.441 0.159 5.441 0.159s3.363-0.006 5.6-0.166c0.313-0.037 0.994-0.041 1.603-0.678 0.481-0.484 0.637-1.588 0.637-1.588s0.159-1.294 0.159-2.591v-1.213c-0.003-1.294-0.162-2.591-0.162-2.591zM6.347 10.075v-4.497l4.322 2.256-4.322 2.241z"></path>
+                </svg>
+                <span className="pr-2">VIDEO</span>
+              </span>
+            </div>
+            <picture className="max-w-3xl">
+              <Image
+                width={1000}
+                height={1000}
+                src={"/deathloop-xbox.jpg "}
+                className="w-full rounded-md"
+              />
+            </picture>
+            <div className="text-gray-50 rounded-md max-w-3xl z-10 pl-10 font-bold bg-gradient-to-t from-black to-transparent h-1/3 w-full bottom-0 absolute">
+              <span className="flex text-slate-50">
+                <svg
+                  class=" size-4"
+                  focusable="false"
+                  fill="white"
+                  viewBox="0 0 22 22"
+                  aria-hidden="true"
+                >
+                  <path d="M8 5v14l11-7z"></path>
+                </svg>
+                <span>VIDEO</span>
+              </span>
+              <div>OFFICIAL XBOX LAUNCHER TRAILER</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+  );
+};
+const Goldenloop_sec = () => {
+  return (
+    <section>
+      <div
+        style={{
+          backgroundImage: "url('../../public/goldenloop-bg.jpg')",
+        }}
+      >
+        goldloop
+      </div>
+    </section>
+  );
+};
+const Carousel_sec = () => {
+  return (
+    <Carousel
+      emulateTouch
+      // dynamicHeight
+      infiniteLoop
+      renderThumbs={() => {
+        return;
+      }}
+      onChange={() => {
+        document.getElementsByClassName("slider-wrapper")[0].style.height =
+          "10000px";
+        // alert("aksjd");
+        return;
+      }}
+      statusFormatter={() => {
+        return;
+      }}
+      renderIndicator={(onClickHandler, isSelected, index, label) => {
+        const defStyle = {
+          marginLeft: 20,
+          backgroundColor: "black",
+          borderRadius: "50%",
+          cursor: "pointer",
+          width: "16px",
+          height: "16px",
+          display: "inline-block",
+          // padding: "3px",
+          border: "1px solid white",
+        };
+        const style = isSelected
+          ? { ...defStyle, backgroundColor: "white" }
+          : { ...defStyle };
+        return (
+          <span
+            style={style}
+            onClick={onClickHandler}
+            onKeyDown={onClickHandler}
+            value={index}
+            key={index}
+            role="button"
+            tabIndex={0}
+            aria-label={`${label} ${index + 1}`}
+          ></span>
+        );
+      }}
+      // showStatus
+    >
+      <div>
+        <img src="video.png" />
+        <div className="w-full h-70vh">
+          <div className="drag absolute top-2/3">
+            <h2>IF AT FIRST YOU DON'T SUCCEED…</h2>
+            <p>
+              DEATHLOOP transports you to the mysterious island of Blackreef,
+              where an eternal struggle between two extraordinary assassins will
+              determine the island's future. As Colt, you must find a way to put
+              an end to the timeloop trapping the island in an endless cycle,
+              all while being hunted by the island's inhabitants. Using your
+              powerful weapons and abilities, you'll need to take out 8 key
+              targets across the stunning, yet chaotic, island before the day
+              resets in order break the loop once and for all. But lurking in
+              the shadows is rival assassin Julianna whose sole mission is to
+              take Colt out and keep the loop going. Learn from each cycle, try
+              new paths and approaches, and break the loop.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="carousel_1.jpg" />
+        <p className="legend">Legend 2</p>
+      </div>
+      <div>
+        <img src="carousel_2.jpg" />
+        <p className="legend">Legend 3</p>
+      </div>
+      <div>
+        <img src="carousel_3.jpg" />
+        <p className="legend">Legend 3</p>
+      </div>
+      <div>
+        <img src="carousel_4.jpg" />
+        <p className="legend">Legend 3</p>
+      </div>
+    </Carousel>
   );
 };
 
@@ -162,6 +291,8 @@ export default function Home() {
     <main className="">
       <Main_sec />
       <Xbox_sec />
+      <Goldenloop_sec />
+      <Carousel_sec />
     </main>
   );
 }

@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        futura: "var(--font-futura)",
+        univers55: "var(--font-univers55)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -16,13 +20,16 @@ module.exports = {
         deathloop_orange: "#cf5d20",
         deathloop_green: "rgb(15, 124, 15)",
         deathloop_orange_hover: "rgb(186, 83, 28)",
+        youtube_red: "rgb(229, 0, 0)",
       },
       textColor: {
         deathloop_orange: "#cf5d20",
       },
       height: {
+        "28vh": "28vh",
         "70vh": "70vh",
         "100vh": "100vh",
+        "1000px": "1000px",
       },
       minHeight: {
         "120vh": "120vh",

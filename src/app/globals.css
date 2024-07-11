@@ -4,10 +4,28 @@
 
 @layer base {
   h3 {
-    @apply font-bold text-2xl;
+    @apply font-bold text-3xl font-futura leading-8;
+  }
+  p {
+    @apply font-univers55 text-lg leading-7 font-thin;
+  }
+  img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .drag {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 }
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -28,10 +46,19 @@
     background-repeat: no-repeat;
   }
 }
-.xbox {
-  background-image: url("../../public/green-bg-pc.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
+.carousel.carousel-slider {
+  height: 1000px;
+}
+.slider-wrapper .axis-horizontal {
+  height: 1000px !important;
+  border: 1px solid blue !important;
+}
+@media (max-width: 640.95px) {
+  .xbox {
+    background-image: url("../../public/green-bg-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 body {
   color: rgb(var(--foreground-rgb));
