@@ -140,19 +140,19 @@ const Xbox_sec = () => {
         </div>
         <div className="flex justify-center align-middle sm:mx-5 w-full my-5 sm:my-10">
           <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
-            <div className="z-10 bg-gradient-to-b max-w-3xl rounded-md from-black to-transparent h-1/3 w-full absolute">
-              <span className="flex py-2 text-slate-50 bg-youtube_red w-20 rounded-md items-center m-auto">
+            <div className="z-10 bg-gradient-to-b max-w-3xl rounded-md from-black to-transparent h-1/3 w-full  flex absolute top-0">
+              <span className="flex absolute right-9 top-6 py-2 text-slate-50 bg-youtube_red w-10 h-8 rounded-md items-center m-auto">
                 <svg
-                  class=" size-9 m-1"
+                  class=" flex align-middle size-7 ml-3 mt-2"
                   focusable="false"
                   fill="white"
-                  viewBox="0 0 20 20"
+                  viewBox="0 0 26 26"
                   aria-hidden="true"
                 >
                   <rect class="frame" x="50" y="50" width="50" height="50" />
                   <path d="M15.841 4.8c0 0-0.156-1.103-0.637-1.587-0.609-0.637-1.291-0.641-1.603-0.678-2.237-0.163-5.597-0.163-5.597-0.163h-0.006c0 0-3.359 0-5.597 0.163-0.313 0.038-0.994 0.041-1.603 0.678-0.481 0.484-0.634 1.587-0.634 1.587s-0.159 1.294-0.159 2.591v1.213c0 1.294 0.159 2.591 0.159 2.591s0.156 1.103 0.634 1.588c0.609 0.637 1.409 0.616 1.766 0.684 1.281 0.122 5.441 0.159 5.441 0.159s3.363-0.006 5.6-0.166c0.313-0.037 0.994-0.041 1.603-0.678 0.481-0.484 0.637-1.588 0.637-1.588s0.159-1.294 0.159-2.591v-1.213c-0.003-1.294-0.162-2.591-0.162-2.591zM6.347 10.075v-4.497l4.322 2.256-4.322 2.241z"></path>
                 </svg>
-                <span className="pr-2">VIDEO</span>
+                {/* <span className="pr-2">VIDEO</span> */}
               </span>
             </div>
             <picture className="max-w-3xl">
@@ -163,10 +163,10 @@ const Xbox_sec = () => {
                 className="w-full rounded-md"
               />
             </picture>
-            <div className="text-gray-50 rounded-md max-w-3xl z-10 pl-10 font-bold bg-gradient-to-t from-black to-transparent h-1/3 w-full bottom-0 absolute">
+            <div className="text-gray-50  rounded-md max-w-3xl z-10 pl-10 font-bold bg-gradient-to-t from-black to-transparent h-1/3 w-full bottom-0 absolute">
               <span className="flex text-slate-50">
                 <svg
-                  class=" size-4"
+                  class="mt-1 mr-2 size-4"
                   focusable="false"
                   fill="white"
                   viewBox="0 0 22 22"
@@ -174,7 +174,7 @@ const Xbox_sec = () => {
                 >
                   <path d="M8 5v14l11-7z"></path>
                 </svg>
-                <span>VIDEO</span>
+                <span> VIDEO</span>
               </span>
               <div>OFFICIAL XBOX LAUNCHER TRAILER</div>
             </div>
