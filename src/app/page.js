@@ -1074,7 +1074,7 @@ const Wallpaper_sec = () => {
                       "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
                     }
                   >
-                    My account
+                    Select Size
                     <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
                   </MenuButton>
 
@@ -1086,27 +1086,7 @@ const Wallpaper_sec = () => {
                   >
                     <MenuItem className={" p-4"}>
                       <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
+                        Select Size
                       </a>
                     </MenuItem>
                   </MenuItems>
@@ -1134,7 +1114,7 @@ const Wallpaper_sec = () => {
                       "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
                     }
                   >
-                    My account
+                    Select Size
                     <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
                   </MenuButton>
 
@@ -1146,27 +1126,7 @@ const Wallpaper_sec = () => {
                   >
                     <MenuItem className={" p-4"}>
                       <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
+                        Select Size
                       </a>
                     </MenuItem>
                   </MenuItems>
@@ -1194,7 +1154,7 @@ const Wallpaper_sec = () => {
                       "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
                     }
                   >
-                    My account
+                    Select Size
                     <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
                   </MenuButton>
 
@@ -1206,27 +1166,7 @@ const Wallpaper_sec = () => {
                   >
                     <MenuItem className={" p-4"}>
                       <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
+                        Select Size
                       </a>
                     </MenuItem>
                   </MenuItems>
@@ -1254,7 +1194,7 @@ const Wallpaper_sec = () => {
                       "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
                     }
                   >
-                    My account
+                    Select Size
                     <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
                   </MenuButton>
 
@@ -1266,27 +1206,7 @@ const Wallpaper_sec = () => {
                   >
                     <MenuItem className={" p-4"}>
                       <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
+                        Select Size
                       </a>
                     </MenuItem>
                   </MenuItems>
@@ -1314,7 +1234,7 @@ const Wallpaper_sec = () => {
                       "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
                     }
                   >
-                    My account
+                    Select Size
                     <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
                   </MenuButton>
 
@@ -1326,27 +1246,7 @@ const Wallpaper_sec = () => {
                   >
                     <MenuItem className={" p-4"}>
                       <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
-                        Deluxe Edition - Playstation®5
+                        Select Size
                       </a>
                     </MenuItem>
                   </MenuItems>
