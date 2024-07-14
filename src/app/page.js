@@ -63,10 +63,7 @@ const Main_sec = () => {
         <div>
           <ul className="flex justify-center my-5 space-x-5">
             <li>
-              <a
-                href="#"
-                className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange"
-              >
+              <a className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange">
                 <svg
                   className="w-10 h-10"
                   fill="currentColor"
@@ -82,10 +79,7 @@ const Main_sec = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange"
-              >
+              <a className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange">
                 <svg
                   className="w-10 h-10"
                   fill="currentColor"
@@ -101,10 +95,7 @@ const Main_sec = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange"
-              >
+              <a className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange">
                 <svg
                   className="w-10 h-10"
                   fill="currentColor"
@@ -116,10 +107,7 @@ const Main_sec = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange"
-              >
+              <a className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange">
                 <svg
                   className="w-10 h-10"
                   fill="currentColor"
@@ -789,10 +777,7 @@ const Outsiders_sec = () => {
             </p>
             <p className="leading-7 mt-3">
               Go to your&nbsp;
-              <a
-                className="text-deathloop_orange underline hover:text-black"
-                href="#"
-              >
+              <a className="text-deathloop_orange underline hover:text-black">
                 Transaction History
               </a>
               &nbsp; to view or download your content.
@@ -845,7 +830,7 @@ const Edition_sec = () => {
                     "border mb-4 w-full flex mx-auto justify-between py-4 text-start pl-3"
                   }
                 >
-                  My account
+                  Deluxe Edition - Playstation®5
                   <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
                 </MenuButton>
 
@@ -857,41 +842,29 @@ const Edition_sec = () => {
                 >
                   <MenuItem className={" p-4"}>
                     <a
+                      href="/Deluxe Edition - Playstation®5"
                       className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                      href="#"
                     >
                       Deluxe Edition - Playstation®5
                     </a>
                   </MenuItem>
                   <MenuItem className={" p-4"}>
-                    <a
-                      className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                      href="#"
-                    >
+                    <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                       Deluxe Edition - Playstation®5
                     </a>
                   </MenuItem>
                   <MenuItem className={" p-4"}>
-                    <a
-                      className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                      href="#"
-                    >
+                    <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                       Deluxe Edition - Playstation®5
                     </a>
                   </MenuItem>
                   <MenuItem className={" p-4"}>
-                    <a
-                      className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                      href="#"
-                    >
+                    <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                       Deluxe Edition - Playstation®5
                     </a>
                   </MenuItem>
                   <MenuItem className={" p-4"}>
-                    <a
-                      className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                      href="#"
-                    >
+                    <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                       Deluxe Edition - Playstation®5
                     </a>
                   </MenuItem>
@@ -951,7 +924,7 @@ const Edition_sec = () => {
                       "border mb-4 w-full flex mx-auto justify-between py-4 text-start pl-3"
                     }
                   >
-                    My account
+                    United State
                     <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
                   </MenuButton>
 
@@ -962,43 +935,28 @@ const Edition_sec = () => {
                     }
                   >
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        United State
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        United State
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        United State
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        United State
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        United State
                       </a>
                     </MenuItem>
                   </MenuItems>
@@ -1009,7 +967,7 @@ const Edition_sec = () => {
                       "border mb-4 w-full flex mx-auto justify-between py-4 text-start pl-3"
                     }
                   >
-                    My account
+                    Amazon
                     <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
                   </MenuButton>
 
@@ -1020,43 +978,28 @@ const Edition_sec = () => {
                     }
                   >
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        Amazon
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        Amazon
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        Amazon
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        Amazon
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        Amazon
                       </a>
                     </MenuItem>
                   </MenuItems>
@@ -1067,7 +1010,7 @@ const Edition_sec = () => {
                       "border mb-4 w-full flex mx-auto justify-between py-4 text-start pl-3"
                     }
                   >
-                    My account
+                    Play Station 5
                     <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
                   </MenuButton>
 
@@ -1078,43 +1021,8 @@ const Edition_sec = () => {
                     }
                   >
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
-                      </a>
-                    </MenuItem>
-                    <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
-                        Deluxe Edition - Playstation®5
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
+                        Play Station 5
                       </a>
                     </MenuItem>
                   </MenuItems>
@@ -1177,42 +1085,27 @@ const Wallpaper_sec = () => {
                     }
                   >
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
@@ -1252,42 +1145,27 @@ const Wallpaper_sec = () => {
                     }
                   >
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
@@ -1327,42 +1205,27 @@ const Wallpaper_sec = () => {
                     }
                   >
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
@@ -1402,42 +1265,27 @@ const Wallpaper_sec = () => {
                     }
                   >
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
@@ -1477,42 +1325,27 @@ const Wallpaper_sec = () => {
                     }
                   >
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
                     <MenuItem className={" p-4"}>
-                      <a
-                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
-                        href="#"
-                      >
+                      <a className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer">
                         Deluxe Edition - Playstation®5
                       </a>
                     </MenuItem>
