@@ -10,26 +10,44 @@ module.exports = {
       fontFamily: {
         futura: "var(--font-futura)",
         univers55: "var(--font-univers55)",
+        montera: "var(--font-montera)",
+        roboto: "var(--font-roboto)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "image-shadow":
+          "linear-gradient(transparent 0%, rgba(34, 34, 34, 0.5) 25%, rgba(34, 34, 34, 0.75) 60%, rgba(34, 34, 34, 0.9) 90%)",
+        "image-shadow-top":
+          "linear-gradient(#222 0%, rgba(34, 34, 34, 0.75) 25%, rgba(34, 34, 34, 0.5) 60%, transparent 90%)",
+        latest4:
+          "linear-gradient(transparent 0%, rgba(83, 47, 43, 0.5) 25%, rgba(83, 47, 43, 0.75) 60%, rgb(83, 47, 43) 90%)",
+        latest5:
+          "linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(131, 36, 5, 0.5) 25%, rgba(131, 36, 5, 0.75) 60%, rgb(131, 36, 5) 90%)",
+        latest6:
+          "linear-gradient(transparent 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.75) 60%, rgb(0, 0, 0) 90%)",
+        latest7:
+          "linear-gradient(transparent 0%, rgba(73, 90, 84, 0.5) 25%, rgba(73, 90, 84, 0.75) 60%, rgb(73, 90, 84) 90%)",
       },
       backgroundColor: {
         deathloop_orange: "#cf5d20",
         deathloop_green: "rgb(15, 124, 15)",
         deathloop_orange_hover: "rgb(186, 83, 28)",
         youtube_red: "rgb(229, 0, 0)",
+        deathloop_white: "#DCDBC8",
+        deathloop_gray: "rgba(220,219,200,0.7)",
       },
       textColor: {
         deathloop_orange: "#cf5d20",
+        deathloop_white: "#DCDBC8",
       },
       height: {
         "28vh": "28vh",
         "70vh": "70vh",
         "100vh": "100vh",
         "1000px": "1000px",
+        "40%": "40%",
       },
       minHeight: {
         "120vh": "120vh",
@@ -37,6 +55,10 @@ module.exports = {
       },
       boxShadow: {
         round: "0px 25px 17px -6px rgba(0, 0, 0, .2)",
+        xbox: "0px 3px 15px rgba(0,0,0,0.5)",
+      },
+      margin: {
+        "10px": "10px",
       },
     },
   },

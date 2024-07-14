@@ -15,12 +15,32 @@ export const furura = localFont({
 export const univers55 = localFont({
   src: [
     {
-      path: "../../public/fonts/FuturaBoldCondensed.woff2",
+      path: "../../public/fonts/Univers55Roman.latin.woff2",
       weight: "400",
       style: "normal",
     },
   ],
   variable: "--font-univers55",
+});
+export const montera = localFont({
+  src: [
+    {
+      path: "../../public/fonts/montserratsemibold.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-montera",
+});
+export const roboto = localFont({
+  src: [
+    {
+      path: "../../public/fonts/montserratsemibold.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-roboto",
 });
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +53,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${furura.variable} ${univers55.variable} `}
+        className={`${inter.variable} ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable}`}
       >
         {children}
       </body>

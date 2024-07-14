@@ -1,7 +1,14 @@
 "use client";
 import Image from "next/image";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import {
+  ChevronDownIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/16/solid";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 const Main_sec = () => {
   return (
     <section>
@@ -9,11 +16,11 @@ const Main_sec = () => {
         <picture>
           <source
             srcSet="/DEATHLOOP-main-mobile.jpg"
-            media="(max-width:959.95px)"
+            media="(max-width:639.95px)"
           ></source>
           <source
             srcSet="/DEATHLOOP-main-pc.webp"
-            media="(min-width:960px)"
+            media="(min-width:640px)"
           ></source>
           <Image
             fill
@@ -24,19 +31,29 @@ const Main_sec = () => {
         </picture>
 
         <div className="flex items-center justify-center sm:justify-end sm:flex-row-reverse min-h-40vh w-full ">
-          <div className="mt-64 sm:mt-20 sm:w-1/2 sm:pl-28">
-            <div className="relative  w-full h-56">
-              <Image alt="awards" fill src={"/Deathloop-left-main.png"} />
+          <div className="mt-64 sm:mt-20 w-3/4 sm:w-2/5 sm:pl-40">
+            <div className="relative max-w-[950px]">
+              <Image
+                alt="awards"
+                width={1000}
+                height={1000}
+                src={"/Deathloop-left-main.png"}
+              />
             </div>
-            <div className="relative my-10 w-full h-10">
-              <Image fill alt="logo" src={"/DEATHLOOP-logo-main.png"} />
+            <div className="relative my-10 w-full ">
+              <Image
+                width={1000}
+                height={1000}
+                alt="logo"
+                src={"/DEATHLOOP-logo-main.png"}
+              />
             </div>
-            <div className="flex items-center flex-col">
-              <button className=" bg-deathloop_orange transition ease-out duration-300 py-3 px-12 m-3 hover:bg-deathloop_orange_hover min-w-20 max-w-52">
-                the button
+            <div className="flex font-futura items-center flex-wrap flex-col sm:flex-row mx-auto justify-center">
+              <button className="uppercase text-xs xl:text-sm bg-deathloop_orange_hover transition ease-out duration-300 tracking-widest py-6 px-12 m-3 hover:opacity-90 min-w-20 w-full sm:w-max">
+                buy now
               </button>
-              <button className=" bg-deathloop_orange py-3 px-12 m-3 ease-out duration-300 hover:bg-deathloop_orange_hover min-w-20 max-w-52">
-                the very longer button
+              <button className="uppercase text-xs xl:text-sm bg-deathloop_orange_hover py-6 px-12 m-3 ease-out tracking-widest duration-300 hover:opacity-90 min-w-20 w-full sm:w-max">
+                play it now with game pass
               </button>
             </div>
           </div>
@@ -48,7 +65,7 @@ const Main_sec = () => {
             <li>
               <a
                 href="#"
-                className="text-gray-500 ease-in-out delay-150 hover:text-deathloop_orange"
+                className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange"
               >
                 <svg
                   className="w-10 h-10"
@@ -67,7 +84,7 @@ const Main_sec = () => {
             <li>
               <a
                 href="#"
-                className="text-gray-500 ease-in-out delay-150 hover:text-deathloop_orange"
+                className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange"
               >
                 <svg
                   className="w-10 h-10"
@@ -86,7 +103,7 @@ const Main_sec = () => {
             <li>
               <a
                 href="#"
-                className="text-gray-500 ease-in-out delay-150 hover:text-deathloop_orange"
+                className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange"
               >
                 <svg
                   className="w-10 h-10"
@@ -101,7 +118,7 @@ const Main_sec = () => {
             <li>
               <a
                 href="#"
-                className="text-gray-500 ease-in-out delay-150 hover:text-deathloop_orange"
+                className="text-gray-500 ease-in-out transition duration-300 hover:text-deathloop_orange"
               >
                 <svg
                   className="w-10 h-10"
@@ -123,60 +140,66 @@ const Main_sec = () => {
 const Xbox_sec = () => {
   return (
     <section>
-      <div className="flex flex-col sm:flex-row-reverse xbox bg-deathloop_green">
-        <div className="w-full sm:my-10 pt-52 sm:py-5 px-5">
-          <h3 className="uppercase ">
-            Available Now on Xbox. Play it with Xbox Game Pass and PC Game Pass
-          </h3>
-          <p>
-            Arkane's most highly-lauded game is now available on Xbox Series
-            X|S! "DEATHLOOP" transports players to the lawless island of
-            Blackreef in an eternal struggle between two extraordinary
-            assassins.
-          </p>
-          <button className="text-black bg-white transition ease-out duration-300 py-3 px-12 m-3 hover:bg-gray-400 min-w-20 max-w-52">
-            the button
-          </button>
-        </div>
-        <div className="flex justify-center align-middle sm:mx-5 w-full my-5 sm:my-10">
-          <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
-            <div className="z-10 bg-gradient-to-b max-w-3xl rounded-md from-black to-transparent h-1/3 w-full  flex absolute top-0">
-              <span className="flex absolute right-9 top-6 py-2 text-slate-50 bg-youtube_red w-10 h-8 rounded-md items-center m-auto">
-                <svg
-                  class=" flex align-middle size-7 ml-3 mt-2"
-                  focusable="false"
-                  fill="white"
-                  viewBox="0 0 26 26"
-                  aria-hidden="true"
-                >
-                  <rect class="frame" x="50" y="50" width="50" height="50" />
-                  <path d="M15.841 4.8c0 0-0.156-1.103-0.637-1.587-0.609-0.637-1.291-0.641-1.603-0.678-2.237-0.163-5.597-0.163-5.597-0.163h-0.006c0 0-3.359 0-5.597 0.163-0.313 0.038-0.994 0.041-1.603 0.678-0.481 0.484-0.634 1.587-0.634 1.587s-0.159 1.294-0.159 2.591v1.213c0 1.294 0.159 2.591 0.159 2.591s0.156 1.103 0.634 1.588c0.609 0.637 1.409 0.616 1.766 0.684 1.281 0.122 5.441 0.159 5.441 0.159s3.363-0.006 5.6-0.166c0.313-0.037 0.994-0.041 1.603-0.678 0.481-0.484 0.637-1.588 0.637-1.588s0.159-1.294 0.159-2.591v-1.213c-0.003-1.294-0.162-2.591-0.162-2.591zM6.347 10.075v-4.497l4.322 2.256-4.322 2.241z"></path>
-                </svg>
-                {/* <span className="pr-2">VIDEO</span> */}
-              </span>
-            </div>
-            <picture className="max-w-3xl">
-              <Image
-                width={1000}
-                height={1000}
-                src={"/deathloop-xbox.jpg "}
-                className="w-full rounded-md"
-              />
-            </picture>
-            <div className="text-gray-50  rounded-md max-w-3xl z-10 pl-10 font-bold bg-gradient-to-t from-black to-transparent h-1/3 w-full bottom-0 absolute">
-              <span className="flex text-slate-50">
-                <svg
-                  class="mt-1 mr-2 size-4"
-                  focusable="false"
-                  fill="white"
-                  viewBox="0 0 22 22"
-                  aria-hidden="true"
-                >
-                  <path d="M8 5v14l11-7z"></path>
-                </svg>
-                <span> VIDEO</span>
-              </span>
-              <div>OFFICIAL XBOX LAUNCHER TRAILER</div>
+      <div className="xbox bg-deathloop_green">
+        <div className="flex max-w-[1680px] m-auto items-center flex-col sm:flex-row-reverse ">
+          <div className="w-full sm:my-10 pt-52 sm:py-5 px-5">
+            <h3 className="uppercase ">
+              Available Now on Xbox. Play it with Xbox Game Pass and PC Game
+              Pass
+            </h3>
+            <p className="leading-8 mt-3">
+              Arkane's most highly-lauded game is now available on Xbox Series
+              X|S! "DEATHLOOP" transports players to the lawless island of
+              Blackreef in an eternal struggle between two extraordinary
+              assassins.
+            </p>
+            <button className="font-futura uppercase text-sm font-bold text-black bg-white transition ease-out duration-300 py-3 px-8 my-3 hover:bg-gray-400 min-w-20 max-w-52">
+              play it now
+            </button>
+          </div>
+          <div className="flex justify-center align-middle sm:mx-5 w-full my-5 sm:my-10">
+            <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round hover:shadow-xbox transition duration-300 cursor-pointer">
+              <div className="z-10  max-w-3xl rounded-md bg-image-shadow-top h-40% w-full flex absolute -top-1">
+                <span className="flex absolute right-9 top-6 py-2 text-deathloop_white sm:w-24 bg-youtube_red w-10 h-8 rounded-md items-center m-auto">
+                  <svg
+                    className=" flex align-middle size-7 ml-3 mt-10px"
+                    focusable="false"
+                    fill="white"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M15.841 4.8c0 0-0.156-1.103-0.637-1.587-0.609-0.637-1.291-0.641-1.603-0.678-2.237-0.163-5.597-0.163-5.597-0.163h-0.006c0 0-3.359 0-5.597 0.163-0.313 0.038-0.994 0.041-1.603 0.678-0.481 0.484-0.634 1.587-0.634 1.587s-0.159 1.294-0.159 2.591v1.213c0 1.294 0.159 2.591 0.159 2.591s0.156 1.103 0.634 1.588c0.609 0.637 1.409 0.616 1.766 0.684 1.281 0.122 5.441 0.159 5.441 0.159s3.363-0.006 5.6-0.166c0.313-0.037 0.994-0.041 1.603-0.678 0.481-0.484 0.637-1.588 0.637-1.588s0.159-1.294 0.159-2.591v-1.213c-0.003-1.294-0.162-2.591-0.162-2.591zM6.347 10.075v-4.497l4.322 2.256-4.322 2.241z"></path>
+                  </svg>
+                  <span className="hidden sm:block font-futura text-xs">
+                    YOUTUBE
+                  </span>
+                </span>
+              </div>
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/deathloop-xbox.jpg "}
+                  className="w-full rounded-md"
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-10 font-bold bg-image-shadow h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 5v14l11-7z"></path>
+                  </svg>
+                  <span className="text-xs"> VIDEO</span>
+                </span>
+                <div className="text-xl mt-4 mb-10 text-deathloop_white">
+                  OFFICIAL XBOX LAUNCHER TRAILER
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -187,12 +210,387 @@ const Xbox_sec = () => {
 const Goldenloop_sec = () => {
   return (
     <section>
-      <div
-        style={{
-          backgroundImage: "url('../../public/goldenloop-bg.jpg')",
-        }}
-      >
-        goldloop
+      <div className="goldloop text-deathloop_white py-3 bg-black">
+        <div className="flex max-w-[1680px] m-auto items-center flex-col sm:flex-row">
+          <div className="w-full sm:my-10 pt-52 sm:py-5 px-5">
+            <h3 className="uppercase text-3xl xl:text-5xl">
+              The GOLDENLOOP Update is Live!
+            </h3>
+            <p className="leading-8 mt-3">
+              The path to freedom is golden - This new update includes a new
+              ability, weapon, trinkets, cross-play matchmaking, and more!
+            </p>
+            <button className="font-futura uppercase text-sm font-bold text-black bg-deathloop_white transition ease-out duration-300 py-3 px-8 my-3 hover:bg-gray-400 min-w-20 max-w-52">
+              Learn More
+            </button>
+          </div>
+          <div className="flex justify-center align-middle sm:mx-5 w-full my-5 sm:my-10">
+            <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              <div className="z-10  max-w-3xl rounded-md bg-image-shadow-top h-40% w-full flex absolute -top-1">
+                <span className="flex absolute right-9 top-6 py-2 text-deathloop_white sm:w-24 bg-youtube_red w-10 h-8 rounded-md items-center m-auto">
+                  <svg
+                    className=" flex align-middle size-7 ml-3 mt-10px"
+                    focusable="false"
+                    fill="white"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M15.841 4.8c0 0-0.156-1.103-0.637-1.587-0.609-0.637-1.291-0.641-1.603-0.678-2.237-0.163-5.597-0.163-5.597-0.163h-0.006c0 0-3.359 0-5.597 0.163-0.313 0.038-0.994 0.041-1.603 0.678-0.481 0.484-0.634 1.587-0.634 1.587s-0.159 1.294-0.159 2.591v1.213c0 1.294 0.159 2.591 0.159 2.591s0.156 1.103 0.634 1.588c0.609 0.637 1.409 0.616 1.766 0.684 1.281 0.122 5.441 0.159 5.441 0.159s3.363-0.006 5.6-0.166c0.313-0.037 0.994-0.041 1.603-0.678 0.481-0.484 0.637-1.588 0.637-1.588s0.159-1.294 0.159-2.591v-1.213c-0.003-1.294-0.162-2.591-0.162-2.591zM6.347 10.075v-4.497l4.322 2.256-4.322 2.241z"></path>
+                  </svg>
+                  <span className="hidden sm:block font-futura text-xs">
+                    YOUTUBE
+                  </span>
+                </span>
+              </div>
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/deathloop-glu-black-pc.jpg "}
+                  className="w-full rounded-md"
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-5 font-bold bg-image-shadow h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 5v14l11-7z"></path>
+                  </svg>
+                  <span className="text-xs"> VIDEO</span>
+                </span>
+                <div className="text-xl mt-4 mb-10 uppercase text-deathloop_white">
+                  Official Game Update Trailer
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+const Latest_sec = () => {
+  return (
+    <section>
+      <div className="bg-black text-deathloop_white">
+        <h2 className="text-center py-10">THE LATEST</h2>
+        <div className="flex flex-wrap mx-auto max-w-[1660px] px-4">
+          <div className="flex justify-center sm:px-3 sm:max-w-[50%] w-full my-5 sm:my-3">
+            <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto  sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              <div className="z-10   rounded-md bg-image-shadow-top h-40% w-full flex absolute -top-1">
+                <span className="flex absolute right-9 top-6 py-2 text-deathloop_white sm:w-24 bg-youtube_red w-10 h-8 rounded-md items-center m-auto">
+                  <svg
+                    className=" flex align-middle size-7 ml-3 mt-10px"
+                    focusable="false"
+                    fill="white"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M15.841 4.8c0 0-0.156-1.103-0.637-1.587-0.609-0.637-1.291-0.641-1.603-0.678-2.237-0.163-5.597-0.163-5.597-0.163h-0.006c0 0-3.359 0-5.597 0.163-0.313 0.038-0.994 0.041-1.603 0.678-0.481 0.484-0.634 1.587-0.634 1.587s-0.159 1.294-0.159 2.591v1.213c0 1.294 0.159 2.591 0.159 2.591s0.156 1.103 0.634 1.588c0.609 0.637 1.409 0.616 1.766 0.684 1.281 0.122 5.441 0.159 5.441 0.159s3.363-0.006 5.6-0.166c0.313-0.037 0.994-0.041 1.603-0.678 0.481-0.484 0.637-1.588 0.637-1.588s0.159-1.294 0.159-2.591v-1.213c-0.003-1.294-0.162-2.591-0.162-2.591zM6.347 10.075v-4.497l4.322 2.256-4.322 2.241z"></path>
+                  </svg>
+                  <span className="hidden sm:block font-futura text-xs">
+                    YOUTUBE
+                  </span>
+                </span>
+              </div>
+              <picture className="">
+                <source
+                  srcSet="/latest_card_1_pc.jpg"
+                  media="(max-width:639.95px)"
+                ></source>
+                <source
+                  srcSet="/latest_card_1_mobile.jpg"
+                  media="(min-width:640px)"
+                ></source>
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/latest_card_2_mobile.jpg "}
+                  className="w-full rounded-md"
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md  z-10 pl-6 font-bold bg-image-shadow h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 5v14l11-7z"></path>
+                  </svg>
+                  <span className="text-xs"> VIDEO</span>
+                </span>
+                <div className="text-xl mt-4 mb-10 text-deathloop_white">
+                  OFFICIAL XBOX LAUNCHER TRAILER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[25%] w-full my-5 sm:my-3">
+            <div className="relative hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              <div className="z-10  max-w-3xl rounded-md bg-image-shadow-top h-40% w-full flex absolute -top-1">
+                <span className="flex absolute right-9 top-6 py-2 text-deathloop_white bg-youtube_red w-10 h-8 rounded-md items-center m-auto">
+                  <svg
+                    className=" flex align-middle size-7 ml-3 mt-10px"
+                    focusable="false"
+                    fill="white"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M15.841 4.8c0 0-0.156-1.103-0.637-1.587-0.609-0.637-1.291-0.641-1.603-0.678-2.237-0.163-5.597-0.163-5.597-0.163h-0.006c0 0-3.359 0-5.597 0.163-0.313 0.038-0.994 0.041-1.603 0.678-0.481 0.484-0.634 1.587-0.634 1.587s-0.159 1.294-0.159 2.591v1.213c0 1.294 0.159 2.591 0.159 2.591s0.156 1.103 0.634 1.588c0.609 0.637 1.409 0.616 1.766 0.684 1.281 0.122 5.441 0.159 5.441 0.159s3.363-0.006 5.6-0.166c0.313-0.037 0.994-0.041 1.603-0.678 0.481-0.484 0.637-1.588 0.637-1.588s0.159-1.294 0.159-2.591v-1.213c-0.003-1.294-0.162-2.591-0.162-2.591zM6.347 10.075v-4.497l4.322 2.256-4.322 2.241z"></path>
+                  </svg>
+                </span>
+              </div>
+              <picture className="max-w-3xl">
+                <source
+                  srcSet="/latest_card_2_mobile.jpg"
+                  media="(max-width:639.95px)"
+                ></source>
+                <source
+                  srcSet="/latest_card_2_pc.jpg"
+                  media="(min-width:640px)"
+                ></source>
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/latest_card_2_mobile.jpg "}
+                  className="w-full rounded-md  "
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-6 font-bold bg-image-shadow h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 5v14l11-7z"></path>
+                  </svg>
+                  <span className="text-xs"> VIDEO</span>
+                </span>
+                <div className="text-xl mt-4 mb-10 text-deathloop_white">
+                  OFFICIAL XBOX LAUNCHER TRAILER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[25%] w-full my-5 sm:my-3">
+            <div className="relative hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              <div className="z-10  max-w-3xl rounded-md bg-image-shadow-top h-40% w-full flex absolute -top-1">
+                <span className="flex absolute right-9 top-6 py-2 text-deathloop_white bg-youtube_red w-10 h-8 rounded-md items-center m-auto">
+                  <svg
+                    className=" flex align-middle size-7 ml-3 mt-10px"
+                    focusable="false"
+                    fill="white"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M15.841 4.8c0 0-0.156-1.103-0.637-1.587-0.609-0.637-1.291-0.641-1.603-0.678-2.237-0.163-5.597-0.163-5.597-0.163h-0.006c0 0-3.359 0-5.597 0.163-0.313 0.038-0.994 0.041-1.603 0.678-0.481 0.484-0.634 1.587-0.634 1.587s-0.159 1.294-0.159 2.591v1.213c0 1.294 0.159 2.591 0.159 2.591s0.156 1.103 0.634 1.588c0.609 0.637 1.409 0.616 1.766 0.684 1.281 0.122 5.441 0.159 5.441 0.159s3.363-0.006 5.6-0.166c0.313-0.037 0.994-0.041 1.603-0.678 0.481-0.484 0.637-1.588 0.637-1.588s0.159-1.294 0.159-2.591v-1.213c-0.003-1.294-0.162-2.591-0.162-2.591zM6.347 10.075v-4.497l4.322 2.256-4.322 2.241z"></path>
+                  </svg>
+                </span>
+              </div>
+              <picture className="max-w-3xl">
+                <source
+                  srcSet="/latest_card_3_mobile.jpg"
+                  media="(max-width:639.95px)"
+                ></source>
+                <source
+                  srcSet="/latest_card_3_pc.jpg"
+                  media="(min-width:640px)"
+                ></source>
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/latest_card_2_mobile.jpg "}
+                  className="w-full rounded-md  "
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-6 font-bold bg-image-shadow h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 5v14l11-7z"></path>
+                  </svg>
+                  <span className="text-xs"> VIDEO</span>
+                </span>
+                <div className="text-xl mt-4 mb-10 text-deathloop_white">
+                  OFFICIAL XBOX LAUNCHER TRAILER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[25%] w-full my-5 sm:my-3">
+            <div className="relative hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              {/* <div className="z-10  max-w-3xl rounded-md bg-latest4 h-40% w-full flex absolute -top-1"></div> */}
+              <picture className="max-w-3xl">
+                <source
+                  srcSet="/latest_card_4_mobile.png"
+                  media="(max-width:639.95px)"
+                ></source>
+                <source
+                  srcSet="/latest_card_4_pc.png"
+                  media="(min-width:640px)"
+                ></source>
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/latest_card_4_mobile.png "}
+                  className="w-full rounded-md  "
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-6 font-bold bg-latest4 h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                  </svg>
+                  <span className="text-xs"> NEWS</span>
+                </span>
+                <div className="text-xl mt-4 mb-10 text-deathloop_white">
+                  OFFICIAL XBOX LAUNCHER TRAILER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[25%] w-full my-5 sm:my-3">
+            <div className="relative hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              {/* <div className="z-10  max-w-3xl rounded-md bg-image-shadow-top h-40% w-full flex absolute -top-1"></div> */}
+              <picture className="max-w-3xl">
+                <source
+                  srcSet="/latest_card_5_mobile.png"
+                  media="(max-width:639.95px)"
+                ></source>
+                <source
+                  srcSet="/latest_card_5_pc.jpg"
+                  media="(min-width:640px)"
+                ></source>
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/latest_card_5_mobile.png "}
+                  className="w-full rounded-md  "
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-6 font-bold bg-latest5 h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                  </svg>
+                  <span className="text-xs"> NEWS</span>
+                </span>
+                <div className="text-xl mt-4 mb-10 text-deathloop_white">
+                  OFFICIAL XBOX LAUNCHER TRAILER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[25%] w-full my-5 sm:my-3">
+            <div className="relative hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              {/* <div className="z-10  max-w-3xl rounded-md bg-image-shadow-top h-40% w-full flex absolute -top-1"></div> */}
+              <picture className="max-w-3xl">
+                <source
+                  srcSet="/latest_card_6_mobile.png"
+                  media="(max-width:639.95px)"
+                ></source>
+                <source
+                  srcSet="/latest_card_6_pc.png"
+                  media="(min-width:640px)"
+                ></source>
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/latest_card_6_mobile.png "}
+                  className="w-full rounded-md  "
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-6 font-bold bg-latest6 h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                  </svg>
+                  <span className="text-xs"> NEWS</span>
+                </span>
+                <div className="text-xl mt-4 mb-10 text-deathloop_white">
+                  OFFICIAL XBOX LAUNCHER TRAILER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[25%] w-full my-5 sm:my-3">
+            <div className="relative hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              {/* <div className="z-10  max-w-3xl rounded-md bg-image-shadow-top h-40% w-full flex absolute -top-1"></div> */}
+              <picture className="max-w-3xl">
+                <source
+                  srcSet="/latest_card_7_mobile.png"
+                  media="(max-width:639.95px)"
+                ></source>
+                <source
+                  srcSet="/latest_card_7_pc.png"
+                  media="(min-width:640px)"
+                ></source>
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/latest_card_7_mobile.png "}
+                  className="w-full rounded-md  "
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-6 font-bold bg-latest7 h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                  </svg>
+                  <span className="text-xs"> NEWS</span>
+                </span>
+                <div className="text-xl mt-4 mb-10 text-deathloop_white">
+                  OFFICIAL XBOX LAUNCHER TRAILER
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center mx-auto mt-6 mb-16">
+          <button className="border transition duration-500 cursor-pointer bg-transparent text-deathloop_white py-6 px-16 hover:bg-deathloop_gray sm:w-max w-full mx-5 font-futura">
+            MORE NEWS
+          </button>
+        </div>
       </div>
     </section>
   );
@@ -200,16 +598,34 @@ const Goldenloop_sec = () => {
 const Carousel_sec = () => {
   return (
     <Carousel
+      renderArrowPrev={(clickHandler, hasPrev) => {
+        return (
+          <div
+            className={`${
+              hasPrev ? "absolute" : "hidden"
+            } top-0 bottom-0 left-0 flex justify-center items-center  opacity-30 hover:opacity-100 cursor-pointer z-20`}
+            onClick={clickHandler}
+          >
+            <ChevronLeftIcon className="size-20 text-white" />
+          </div>
+        );
+      }}
+      renderArrowNext={(clickHandler, hasNext) => {
+        return (
+          <div
+            className={`${
+              hasNext ? "absolute" : "hidden"
+            } top-0 bottom-0 right-0 flex justify-center items-center opacity-30 hover:opacity-100 cursor-pointer z-20`}
+            onClick={clickHandler}
+          >
+            <ChevronRightIcon className="size-20 text-white" />
+          </div>
+        );
+      }}
       emulateTouch
-      // dynamicHeight
+      preventMovementUntilSwipeScrollTolerance
       infiniteLoop
       renderThumbs={() => {
-        return;
-      }}
-      onChange={() => {
-        document.getElementsByClassName("slider-wrapper")[0].style.height =
-          "10000px";
-        // alert("aksjd");
         return;
       }}
       statusFormatter={() => {
@@ -224,7 +640,6 @@ const Carousel_sec = () => {
           width: "16px",
           height: "16px",
           display: "inline-block",
-          // padding: "3px",
           border: "1px solid white",
         };
         const style = isSelected
@@ -243,56 +658,1018 @@ const Carousel_sec = () => {
           ></span>
         );
       }}
-      // showStatus
     >
       <div>
-        <img src="video.png" />
-        <div className="w-full h-70vh">
-          <div className="drag absolute top-2/3">
-            <h2>IF AT FIRST YOU DON'T SUCCEED…</h2>
-            <p>
-              DEATHLOOP transports you to the mysterious island of Blackreef,
-              where an eternal struggle between two extraordinary assassins will
-              determine the island's future. As Colt, you must find a way to put
-              an end to the timeloop trapping the island in an endless cycle,
-              all while being hunted by the island's inhabitants. Using your
-              powerful weapons and abilities, you'll need to take out 8 key
-              targets across the stunning, yet chaotic, island before the day
-              resets in order break the loop once and for all. But lurking in
-              the shadows is rival assassin Julianna whose sole mission is to
-              take Colt out and keep the loop going. Learn from each cycle, try
-              new paths and approaches, and break the loop.
+        <img src="video.jpg" />
+        <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
+          <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
+            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <p className="leading-5 xl:leading-6">
+              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
+              innovative take on first-person action that will allow players to
+              choose their preferred playstyle, stealthily sneaking through
+              levels or barreling into the fight, guns-blazing. Armed with a
+              powerful roster of otherworldly powers, as well as an arsenal of
+              savage weaponry, players will combine these deadly tools for
+              takedowns that are as striking as they are devastating. By
+              choosing their powers and weapons, players will fight to survive
+              this deadly game of hunter vs hunted.
             </p>
           </div>
         </div>
       </div>
       <div>
         <img src="carousel_1.jpg" />
-        <p className="legend">Legend 2</p>
+        <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
+          <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
+            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <p className="leading-5 xl:leading-6">
+              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
+              innovative take on first-person action that will allow players to
+              choose their preferred playstyle, stealthily sneaking through
+              levels or barreling into the fight, guns-blazing. Armed with a
+              powerful roster of otherworldly powers, as well as an arsenal of
+              savage weaponry, players will combine these deadly tools for
+              takedowns that are as striking as they are devastating. By
+              choosing their powers and weapons, players will fight to survive
+              this deadly game of hunter vs hunted.
+            </p>
+          </div>
+        </div>
       </div>
       <div>
         <img src="carousel_2.jpg" />
-        <p className="legend">Legend 3</p>
+        <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
+          <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
+            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <p className="leading-5 xl:leading-6">
+              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
+              innovative take on first-person action that will allow players to
+              choose their preferred playstyle, stealthily sneaking through
+              levels or barreling into the fight, guns-blazing. Armed with a
+              powerful roster of otherworldly powers, as well as an arsenal of
+              savage weaponry, players will combine these deadly tools for
+              takedowns that are as striking as they are devastating. By
+              choosing their powers and weapons, players will fight to survive
+              this deadly game of hunter vs hunted.
+            </p>
+          </div>
+        </div>
       </div>
       <div>
         <img src="carousel_3.jpg" />
-        <p className="legend">Legend 3</p>
+        <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
+          <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
+            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <p className="leading-5 xl:leading-6">
+              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
+              innovative take on first-person action that will allow players to
+              choose their preferred playstyle, stealthily sneaking through
+              levels or barreling into the fight, guns-blazing. Armed with a
+              powerful roster of otherworldly powers, as well as an arsenal of
+              savage weaponry, players will combine these deadly tools for
+              takedowns that are as striking as they are devastating. By
+              choosing their powers and weapons, players will fight to survive
+              this deadly game of hunter vs hunted.
+            </p>
+          </div>
+        </div>
       </div>
       <div>
         <img src="carousel_4.jpg" />
-        <p className="legend">Legend 3</p>
+        <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
+          <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
+            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <p className="leading-5 xl:leading-6">
+              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
+              innovative take on first-person action that will allow players to
+              choose their preferred playstyle, stealthily sneaking through
+              levels or barreling into the fight, guns-blazing. Armed with a
+              powerful roster of otherworldly powers, as well as an arsenal of
+              savage weaponry, players will combine these deadly tools for
+              takedowns that are as striking as they are devastating. By
+              choosing their powers and weapons, players will fight to survive
+              this deadly game of hunter vs hunted.
+            </p>
+          </div>
+        </div>
       </div>
     </Carousel>
   );
 };
 
+const Outsiders_sec = () => {
+  return (
+    <section>
+      <div className="outsiders bg-black">
+        <div className="flex max-w-[1680px] m-auto items-center flex-col-reverse sm:flex-row-reverse ">
+          <div className="w-full sm:my-10 pt-5 sm:py-5 px-5">
+            <h3 className="uppercase ">
+              JOIN ARKANE OUTSIDERS TO RECEIVE EXCLUSIVE ITEMS!
+            </h3>
+            <p className="leading-7 mt-3">
+              JOIN THE COMMUNITY Being an Arkane Outsider never looked so good!
+              Join now and receive the stylish and exclusive DEATHLOOP
+              'Eternalist Colt' skin and the 'Ever After' unique weapon.
+            </p>
+            <p className="leading-7 mt-3">
+              As a member, you will also receive The Art of Arkane digital art
+              book. Immerse yourself in the concept art that shaped the worlds
+              of Arkane. Join now!
+            </p>
+            <p className="leading-7 mt-3">
+              Stay in the loop! You can also sign up for emails to receive
+              exclusive developer updates and get sneak peeks of Arkane games.
+            </p>
+            <p className="leading-7 mt-3">
+              After signing into the game with your Bethesda.Net account, The
+              DEATHLOOP 'Eternalist Colt' skin and 'Ever After' unique weapon
+              will automatically appear in-game. Go to your Transaction History
+              for verification of this bonus content.
+            </p>
+            <p className="leading-7 mt-3">
+              Go to your&nbsp;
+              <a
+                className="text-deathloop_orange underline hover:text-black"
+                href="#"
+              >
+                Transaction History
+              </a>
+              &nbsp; to view or download your content.
+            </p>
+            <button className="font-futura uppercase text-sm font-bold text-white bg-deathloop_orange transition ease-out duration-300 py-4 px-8 my-3 hover:opacity-75 min-w-20 max-w-52">
+              log in and join now
+            </button>
+          </div>
+          <div className="flex justify-center align-middle sm:mx-5 w-full my-5 sm:my-10">
+            <div className="relative mx-auto sm:mx-auto sm:my-auto max-w-3xl w-11/12 sm:w-9/12">
+              <picture className="max-w-3xl">
+                <source
+                  srcSet="/outsiders_pic_mobile.png"
+                  media="(max-width:639.95px)"
+                ></source>
+                <source
+                  srcSet="/outsiders_pic_mobile.png"
+                  media="(min-width:1280px)"
+                ></source>
+                <source
+                  srcSet="/outsiders_pic_pc.png"
+                  media="(min-width:640px)"
+                ></source>
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/outsiders_pic_pc.png"}
+                  className="w-full rounded-md"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Edition_sec = () => {
+  return (
+    <section>
+      <div className="edition text-deathloop_white py-3 bg-black">
+        <div className="flex max-w-[1680px] m-auto items-center flex-col sm:flex-row">
+          <div className="w-full sm:my-10 pt-5 sm:py-5 px-5 sm:px-12">
+            <div className="bg-black p-6">
+              <div className="uppercase pb-4">select edition</div>
+              <Menu>
+                <MenuButton
+                  className={
+                    "border mb-4 w-full flex mx-auto justify-between py-4 text-start pl-3"
+                  }
+                >
+                  My account
+                  <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
+                </MenuButton>
+
+                <MenuItems
+                  anchor="bottom"
+                  className={
+                    "bg-[#262626] w-[var(--button-width)] border-2 border-[#cf5d20]"
+                  }
+                >
+                  <MenuItem className={" p-4"}>
+                    <a
+                      className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                      href="#"
+                    >
+                      Deluxe Edition - Playstation®5
+                    </a>
+                  </MenuItem>
+                  <MenuItem className={" p-4"}>
+                    <a
+                      className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                      href="#"
+                    >
+                      Deluxe Edition - Playstation®5
+                    </a>
+                  </MenuItem>
+                  <MenuItem className={" p-4"}>
+                    <a
+                      className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                      href="#"
+                    >
+                      Deluxe Edition - Playstation®5
+                    </a>
+                  </MenuItem>
+                  <MenuItem className={" p-4"}>
+                    <a
+                      className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                      href="#"
+                    >
+                      Deluxe Edition - Playstation®5
+                    </a>
+                  </MenuItem>
+                  <MenuItem className={" p-4"}>
+                    <a
+                      className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                      href="#"
+                    >
+                      Deluxe Edition - Playstation®5
+                    </a>
+                  </MenuItem>
+                </MenuItems>
+              </Menu>
+              <h2 className="uppercase border-t text-lg border-[#2626268c] pt-6">
+                DEATHLOOP Deluxe Edition - Playstation®5
+              </h2>
+              <div className="font-roboto text-[14px] tracking-tight pb-3">
+                <p className="leading-4 text-sm my-3">
+                  Suit up with the Deluxe Edition for classy character skins,
+                  premium weapons, and a digital soundtrack to immerse yourself
+                  in the world of DEATHLOOP:
+                </p>
+                <h1 className="uppercase text-[14px]">
+                  DELUXE EDITION CONTENT
+                </h1>
+                <ul className="list-disc pl-10">
+                  <li>Base Game</li>
+                  <li>Unique Weapon: Transtar Trencher (PS5 Exclusive)</li>
+                  <li>Unique Weapon: Eat The Rich Tribunal</li>
+                  <li>Unique Weapon: .44 Karat Fourpounder</li>
+                  <li>Unique Weapon: Eat The Rich Tribunal</li>
+                  <li>Unique Weapon: Eat The Rich Tribunal</li>
+                  <li>Unique Weapon: Eat The Rich Tribunal</li>
+                  <li>Unique Weapon: Chrome Demon MG-1 Pepper Mill</li>
+
+                  <li>
+                    Original Game Soundtrack Selections (*FORMATTED USB STORAGE
+                    DEVICE REQUIRED TO ACCESS AND PLAY SOUNDTRACK)
+                  </li>
+                  <li>Two Trinkets (equippable buffs)</li>
+                </ul>
+              </div>
+              <div className="sm:hidden">
+                <picture className="max-w-3xl">
+                  <Image
+                    width={1000}
+                    height={1000}
+                    src={"/edition_pic.jpg"}
+                    className="w-10/12 px-3 py-4 m-auto "
+                  />
+                </picture>
+              </div>
+              <div className="border-y border-[#2626268c] py-6">
+                <h2 className="uppercase py-6 text-base">BUY NOW (DIGITAL)</h2>
+                <button className="flex align-middle justify-center items-center font-futura hover:opacity-75 py-4 px-12 uppercase bg-[#00439c]">
+                  <img src="ps.svg" className="max-w-10"></img>
+                  <div>PlayStation®5</div>
+                </button>
+              </div>
+              <div>
+                <h2 className="uppercase py-6 text-base">where to buy</h2>
+                <Menu>
+                  <MenuButton
+                    className={
+                      "border mb-4 w-full flex mx-auto justify-between py-4 text-start pl-3"
+                    }
+                  >
+                    My account
+                    <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
+                  </MenuButton>
+
+                  <MenuItems
+                    anchor="bottom"
+                    className={
+                      "bg-[#262626] w-[var(--button-width)] border-2 border-[#cf5d20]"
+                    }
+                  >
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                  </MenuItems>
+                </Menu>
+                <Menu>
+                  <MenuButton
+                    className={
+                      "border mb-4 w-full flex mx-auto justify-between py-4 text-start pl-3"
+                    }
+                  >
+                    My account
+                    <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
+                  </MenuButton>
+
+                  <MenuItems
+                    anchor="bottom"
+                    className={
+                      "bg-[#262626] w-[var(--button-width)] border-2 border-[#cf5d20]"
+                    }
+                  >
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                  </MenuItems>
+                </Menu>
+                <Menu>
+                  <MenuButton
+                    className={
+                      "border mb-4 w-full flex mx-auto justify-between py-4 text-start pl-3"
+                    }
+                  >
+                    My account
+                    <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
+                  </MenuButton>
+
+                  <MenuItems
+                    anchor="bottom"
+                    className={
+                      "bg-[#262626] w-[var(--button-width)] border-2 border-[#cf5d20]"
+                    }
+                  >
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                  </MenuItems>
+                </Menu>
+                <button className="font-futura uppercase text-sm font-bold text-white bg-deathloop_orange transition ease-out duration-300 py-4 px-8 my-3 hover:opacity-75 min-w-20 w-full ">
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="sm:flex justify-center align-middle sm:mx-5 w-full my-5 sm:my-10 hidden">
+            <div className="relative sm:hover:-translate-y-2 mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 sm:hover:shadow-round transition duration-300 cursor-pointer">
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/edition_pic.jpg"}
+                  className="w-full "
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Wallpaper_sec = () => {
+  return (
+    <section>
+      <div className="bg-black text-deathloop_white">
+        <h2 className="text-center py-10 uppercase">wallpapers</h2>
+        <div className="flex flex-wrap justify-center mx-auto max-w-[1660px] px-4">
+          <div className="flex justify-center sm:px-3 sm:max-w-[43%] xl:max-w-[33%] w-full my-5 sm:my-3">
+            <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/wallpaper1.jpg "}
+                  className="w-full "
+                />
+              </picture>
+              <div className="flex">
+                <Menu>
+                  <MenuButton
+                    className={
+                      "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
+                    }
+                  >
+                    My account
+                    <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
+                  </MenuButton>
+
+                  <MenuItems
+                    anchor="bottom"
+                    className={
+                      "bg-[#262626] w-[var(--button-width)] border-2 border-[#cf5d20]"
+                    }
+                  >
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                  </MenuItems>
+                </Menu>
+                <button className="font-futura mx-auto my-3 text-center uppercase ml-2 text-sm font-bold text-white bg-deathloop_orange w-1/4 hover:opacity-75 transition ease-out duration-300">
+                  download
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[43%] xl:max-w-[33%] w-full my-5 sm:my-3">
+            <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/wallpaper2.jpg "}
+                  className="w-full "
+                />
+              </picture>
+              <div className="flex">
+                <Menu>
+                  <MenuButton
+                    className={
+                      "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
+                    }
+                  >
+                    My account
+                    <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
+                  </MenuButton>
+
+                  <MenuItems
+                    anchor="bottom"
+                    className={
+                      "bg-[#262626] w-[var(--button-width)] border-2 border-[#cf5d20]"
+                    }
+                  >
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                  </MenuItems>
+                </Menu>
+                <button className="font-futura mx-auto my-3 text-center uppercase ml-2 text-sm font-bold text-white bg-deathloop_orange w-1/4 hover:opacity-75 transition ease-out duration-300">
+                  download
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[43%] xl:max-w-[33%] w-full my-5 sm:my-3">
+            <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/wallpaper3.jpg "}
+                  className="w-full "
+                />
+              </picture>
+              <div className="flex">
+                <Menu>
+                  <MenuButton
+                    className={
+                      "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
+                    }
+                  >
+                    My account
+                    <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
+                  </MenuButton>
+
+                  <MenuItems
+                    anchor="bottom"
+                    className={
+                      "bg-[#262626] w-[var(--button-width)] border-2 border-[#cf5d20]"
+                    }
+                  >
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                  </MenuItems>
+                </Menu>
+                <button className="font-futura mx-auto my-3 text-center uppercase ml-2 text-sm font-bold text-white bg-deathloop_orange w-1/4 hover:opacity-75 transition ease-out duration-300">
+                  download
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[43%] xl:max-w-[33%] w-full my-5 sm:my-3">
+            <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/wallpaper4.jpg "}
+                  className="w-full "
+                />
+              </picture>
+              <div className="flex">
+                <Menu>
+                  <MenuButton
+                    className={
+                      "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
+                    }
+                  >
+                    My account
+                    <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
+                  </MenuButton>
+
+                  <MenuItems
+                    anchor="bottom"
+                    className={
+                      "bg-[#262626] w-[var(--button-width)] border-2 border-[#cf5d20]"
+                    }
+                  >
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                  </MenuItems>
+                </Menu>
+                <button className="font-futura mx-auto my-3 text-center uppercase ml-2 text-sm font-bold text-white bg-deathloop_orange w-1/4 hover:opacity-75 transition ease-out duration-300">
+                  download
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 sm:max-w-[43%] xl:max-w-[33%] w-full my-5 sm:my-3">
+            <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/wallpaper5.jpg "}
+                  className="w-full "
+                />
+              </picture>
+              <div className="flex">
+                <Menu>
+                  <MenuButton
+                    className={
+                      "border w-3/4 flex mx-auto justify-between py-4 text-start pl-3 my-3 "
+                    }
+                  >
+                    My account
+                    <ChevronDownIcon className="size-4 mr-2 mt-1 fill-white/60" />
+                  </MenuButton>
+
+                  <MenuItems
+                    anchor="bottom"
+                    className={
+                      "bg-[#262626] w-[var(--button-width)] border-2 border-[#cf5d20]"
+                    }
+                  >
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                    <MenuItem className={" p-4"}>
+                      <a
+                        className="block data-[focus]:bg-black data-[focus]:text-[#f5cc89] transition duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        Deluxe Edition - Playstation®5
+                      </a>
+                    </MenuItem>
+                  </MenuItems>
+                </Menu>
+                <button className="font-futura mx-auto my-3 text-center uppercase ml-2 text-sm font-bold text-white bg-deathloop_orange w-1/4 hover:opacity-75 transition ease-out duration-300">
+                  download
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Media_sec = () => {
+  return (
+    <section>
+      <div className="bg-black media text-deathloop_white py-5">
+        <h2 className="text-center py-10">Media</h2>
+        <div className="flex flex-wrap mx-auto max-w-[1660px] px-4">
+          <div className="flex justify-center sm:px-3 max-w-[50%] sm:max-w-[25%] w-full my-5 sm:my-3">
+            <div className="relative sm:h-full hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/media_mobile_1.jpg "}
+                  className="h-full rounded-md sm:object-cover"
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-10 pb-5 font-bold bg-image-shadow h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"></path>
+                  </svg>
+                  <span className="text-xs"> SCREENSHOT</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 max-w-[50%] sm:max-w[50%] w-full my-5 sm:my-3">
+            <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/media_mobile_2.jpg "}
+                  className="w-full rounded-md"
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-10  pb-5 font-bold bg-image-shadow h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"></path>
+                  </svg>
+                  <span className="text-xs"> SCREENSHOT</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center sm:px-3 max-w-[50%] sm:max-w-[25%] w-full my-5 sm:my-3">
+            <div className="relative sm:h-full hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
+              <picture className="max-w-3xl">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/media_mobile_3.jpg "}
+                  className="h-full rounded-md sm:object-cover"
+                />
+              </picture>
+              <div className="text-deathloop_white flex flex-col justify-end font-futura rounded-md max-w-3xl z-10 pl-10 pb-5 font-bold bg-image-shadow h-40% w-full bottom-0 absolute">
+                <span className="flex text-deathloop_white ">
+                  <svg
+                    className="mr-2 size-4"
+                    focusable="false"
+                    fill="#DCDBC8"
+                    viewBox="0 0 26 26"
+                    aria-hidden="true"
+                  >
+                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"></path>
+                  </svg>
+
+                  <span className="text-xs"> SCREENSHOT</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center mx-auto mt-6 mb-16">
+          <button className="border transition duration-500 cursor-pointer bg-transparent text-deathloop_white py-6 px-16 hover:bg-deathloop_gray sm:w-max w-full mx-5 font-futura">
+            MORE MEDIA
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+const Arkane_sec = () => {
+  return (
+    <section>
+      <div className="bg-deathloop_orange relative min-h-[40vh]">
+        <div className="">
+          <Image
+            width={1000}
+            height={1000}
+            src={"/Arkane_Logo.png"}
+            className="sm:w-1/3 px-9 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          />
+        </div>
+      </div>
+      <div className="flex justify-center mx-auto pb-6 pt-10 mb-16 bg-[#262626]">
+        <button className="border transition duration-500 cursor-pointer bg-black text-white py-4 px-16 hover:bg-deathloop_gray font-montera">
+          <div className="flex">
+            <svg
+              className=" flex align-middle size-7 mr-2"
+              focusable="false"
+              fill="white"
+              viewBox="0 0 26 26"
+              aria-hidden="true"
+            >
+              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path>
+            </svg>
+            <div>ENGLISH</div>
+          </div>
+        </button>
+      </div>
+    </section>
+  );
+};
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Main_sec />
       <Xbox_sec />
       <Goldenloop_sec />
+      <Latest_sec />
       <Carousel_sec />
+      <Outsiders_sec />
+      <Edition_sec />
+      <Wallpaper_sec />
+      <Media_sec />
+      <Arkane_sec />
     </main>
   );
 }
