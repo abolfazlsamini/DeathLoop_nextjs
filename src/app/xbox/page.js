@@ -678,6 +678,54 @@ const Component = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div className="px-1 sm:pr-1">
+          <InView>
+            {({ inView, ref, entry }) => (
+              <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                <div className="relative">
+                  <div className="overflow-hidden">
+                    <picture>
+                      <source
+                        srcSet="./xbox/pic_14_mobile.jpg"
+                        media="(max-width:639.95px)"
+                      ></source>
+                      <source
+                        srcSet="./xbox/pic_14.jpg"
+                        media="(min-width:640px)"
+                      ></source>
+                      <Image
+                        className="hover:scale-110 sm:hover:scale-100 transition-all w-full"
+                        width={1000}
+                        height={1000}
+                        src={pic_14}
+                      />
+                    </picture>
+                  </div>
+                  <div className="sm:absolute text-black sm:top-1/2 sm:-translate-y-1/2 sm:bg-transparent right-0 bg-white sm:w-2/5 p-3 sm:px-10 xl:px-14 sm:flex sm:justify-center sm:flex-col">
+                    <div className="text-2xl mb-5 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
+                      Have an Amazon Fire TV stick? You can play Xbox. No
+                      console required.
+                    </div>
+                    <div className="text-xs mb-5 xl:text-xl font-segoeui">
+                      Play hundreds of games with Game Pass Ultimate.
+                    </div>
+                    <a
+                      className="flex btn_parent mb-5 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
+                      href="#"
+                    >
+                      <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                        learn more
+                      </div>
+                      <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            )}
+          </InView>
+        </div>
+      </section>
     </section>
   );
 };

@@ -146,7 +146,7 @@ const Xbox_sec = () => {
             </button>
           </div>
           <div className="flex justify-center align-middle sm:mx-5 w-full my-5 sm:my-10">
-            <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round hover:shadow-xbox transition duration-300 cursor-pointer">
+            <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-xbox transition duration-300 cursor-pointer">
               <div className="z-10  max-w-3xl rounded-md bg-image-shadow-top h-40% w-full flex absolute -top-1">
                 <span className="flex absolute right-9 top-6 py-2 text-deathloop_white sm:w-24 bg-youtube_red w-10 h-8 rounded-md items-center m-auto">
                   <svg
