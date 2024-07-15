@@ -35,7 +35,7 @@ module.exports = {
       },
       backgroundColor: {
         deathloop_orange: "#cf5d20",
-        deathloop_green: "rgb(15, 124, 15)",
+        deathloop_green: "#0f7c55",
         deathloop_orange_hover: "rgb(186, 83, 28)",
         youtube_red: "rgb(229, 0, 0)",
         deathloop_white: "#DCDBC8",

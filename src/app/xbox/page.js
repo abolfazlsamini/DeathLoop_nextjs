@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "../carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useInView, InView } from "react-intersection-observer";
 import pic_1 from "../../../public/xbox/pic_1.jpg";
-import pic_1_mobile from "../../../public/xbox/pic_1_mobile.jpg";
 import pic_2 from "../../../public/xbox/pic_2.jpg";
 import pic_3 from "../../../public/xbox/pic_3.jpg";
 import pic_4 from "../../../public/xbox/pic_4.jpg";
@@ -20,9 +19,12 @@ import pic_12 from "../../../public/xbox/pic_12.jpg";
 import pic_13 from "../../../public/xbox/pic_13.jpg";
 import pic_14 from "../../../public/xbox/pic_14.jpg";
 
+const Carousel_sec = () => {
+  return;
+};
+
 const Component = () => {
   const { ref, inView, entry } = useInView({
-    /* Optional options */
     threshold: 0.6,
   });
 
@@ -47,6 +49,7 @@ const Component = () => {
                             media="(min-width:640px)"
                           ></source>
                           <Image
+                            alt=""
                             className="hover:scale-110 transition-all "
                             width={1000}
                             height={1000}
@@ -94,6 +97,7 @@ const Component = () => {
                             media="(min-width:640px)"
                           ></source>
                           <Image
+                            alt=""
                             className="hover:scale-110 transition-all "
                             width={1000}
                             height={1000}
@@ -143,6 +147,7 @@ const Component = () => {
                             media="(min-width:640px)"
                           ></source>
                           <Image
+                            alt=""
                             className="hover:scale-110 transition-all "
                             width={1000}
                             height={1000}
@@ -193,6 +198,7 @@ const Component = () => {
                             media="(min-width:640px)"
                           ></source>
                           <Image
+                            alt=""
                             className="hover:scale-110 transition-all "
                             width={1000}
                             height={1000}
@@ -243,6 +249,7 @@ const Component = () => {
                           media="(min-width:640px)"
                         ></source>
                         <Image
+                          alt=""
                           className="hover:scale-110 transition-all "
                           width={1000}
                           height={1000}
@@ -293,6 +300,7 @@ const Component = () => {
                           media="(min-width:640px)"
                         ></source>
                         <Image
+                          alt=""
                           className="hover:scale-110 transition-all "
                           width={1000}
                           height={1000}
@@ -346,6 +354,7 @@ const Component = () => {
                         media="(min-width:640px)"
                       ></source>
                       <Image
+                        alt=""
                         className="hover:scale-110 sm:hover:scale-100 transition-all w-full"
                         width={1000}
                         height={1000}
@@ -395,6 +404,7 @@ const Component = () => {
                           media="(min-width:640px)"
                         ></source>
                         <Image
+                          alt=""
                           className="hover:scale-110 transition-all "
                           width={1000}
                           height={1000}
@@ -445,6 +455,7 @@ const Component = () => {
                           media="(min-width:640px)"
                         ></source>
                         <Image
+                          alt=""
                           className="hover:scale-110 transition-all "
                           width={1000}
                           height={1000}
@@ -500,6 +511,7 @@ const Component = () => {
                             media="(min-width:640px)"
                           ></source>
                           <Image
+                            alt=""
                             className="hover:scale-110 transition-all "
                             width={1000}
                             height={1000}
@@ -547,6 +559,7 @@ const Component = () => {
                             media="(min-width:640px)"
                           ></source>
                           <Image
+                            alt=""
                             className="hover:scale-110 transition-all "
                             width={1000}
                             height={1000}
@@ -596,6 +609,7 @@ const Component = () => {
                             media="(min-width:640px)"
                           ></source>
                           <Image
+                            alt=""
                             className="hover:scale-110 transition-all "
                             width={1000}
                             height={1000}
@@ -646,6 +660,7 @@ const Component = () => {
                             media="(min-width:640px)"
                           ></source>
                           <Image
+                            alt=""
                             className="hover:scale-110 transition-all "
                             width={1000}
                             height={1000}
@@ -695,6 +710,7 @@ const Component = () => {
                         media="(min-width:640px)"
                       ></source>
                       <Image
+                        alt=""
                         className="hover:scale-110 sm:hover:scale-100 transition-all w-full"
                         width={1000}
                         height={1000}
@@ -733,7 +749,7 @@ const Component = () => {
 export default function Xbox() {
   return (
     <main className="bg-white">
-      {/* <Carousel_sec /> */}
+      <Carousel />
       <div>
         <Component />
       </div>

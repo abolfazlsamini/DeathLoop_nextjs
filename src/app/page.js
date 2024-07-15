@@ -23,8 +23,8 @@ const Main_sec = () => {
             media="(min-width:1040px)"
           ></source>
           <Image
+            alt=""
             fill
-            alt="main image"
             className="h-full -z-10 absolute fill-inherit object-cover"
             src={"/DEATHLOOP-main-mobile.jpg"}
           />
@@ -34,7 +34,7 @@ const Main_sec = () => {
           <div className="mt-64 lg:mt-20 w-3/4 lg:w-2/5 lg:pl-40">
             <div className="relative max-w-[950px]">
               <Image
-                alt="awards"
+                alt=""
                 width={1000}
                 height={1000}
                 src={"/Deathloop-left-main.png"}
@@ -42,9 +42,9 @@ const Main_sec = () => {
             </div>
             <div className="relative my-10 w-full ">
               <Image
+                alt=""
                 width={1000}
                 height={1000}
-                alt="logo"
                 src={"/DEATHLOOP-logo-main.png"}
               />
             </div>
@@ -53,7 +53,7 @@ const Main_sec = () => {
                 buy now
               </button>
               <button className="uppercase text-xs xl:text-sm bg-deathloop_orange_hover py-6 px-12 m-3 ease-out tracking-widest duration-300 hover:opacity-90 min-w-20 w-full sm:w-max">
-                play it now with game pass
+                Play With DG Gold
               </button>
             </div>
           </div>
@@ -132,14 +132,12 @@ const Xbox_sec = () => {
         <div className="flex max-w-[1680px] m-auto items-center flex-col sm:flex-row-reverse ">
           <div className="w-full sm:my-10 pt-52 sm:py-5 px-5">
             <h3 className="uppercase ">
-              Available Now on Xbox. Play it with Xbox Game Pass and PC Game
-              Pass
+              AVAILABLE ON XBOX GAME PASS , PLAY STATION PLUS , DG GOLD AND PC
+              GAME PASS
             </h3>
             <p className="leading-8 mt-3">
-              Arkane's most highly-lauded game is now available on Xbox Series
-              X|S! "DEATHLOOP" transports players to the lawless island of
-              Blackreef in an eternal struggle between two extraordinary
-              assassins.
+              You can play Tropicaloop on various free services; you just need
+              to have one of the mentioned accounts
             </p>
             <button className="font-futura uppercase text-sm font-bold text-black bg-white transition ease-out duration-300 py-3 px-8 my-3 hover:bg-gray-400 min-w-20 max-w-52">
               play it now
@@ -165,6 +163,7 @@ const Xbox_sec = () => {
               </div>
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/deathloop-xbox.jpg "}
@@ -232,6 +231,7 @@ const Goldenloop_sec = () => {
               </div>
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/deathloop-glu-black-pc.jpg "}
@@ -296,6 +296,7 @@ const Latest_sec = () => {
                   media="(min-width:640px)"
                 ></source>
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/latest_card_2_mobile.jpg "}
@@ -346,6 +347,7 @@ const Latest_sec = () => {
                   media="(min-width:640px)"
                 ></source>
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/latest_card_2_mobile.jpg "}
@@ -366,7 +368,7 @@ const Latest_sec = () => {
                   <span className="text-xs"> VIDEO</span>
                 </span>
                 <div className="text-xl mt-4 mb-10 text-deathloop_white">
-                  OFFICIAL XBOX LAUNCHER TRAILER
+                  OFFICIAL PC LAUNCHER TRAILER
                 </div>
               </div>
             </div>
@@ -396,6 +398,7 @@ const Latest_sec = () => {
                   media="(min-width:640px)"
                 ></source>
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/latest_card_2_mobile.jpg "}
@@ -416,7 +419,7 @@ const Latest_sec = () => {
                   <span className="text-xs"> VIDEO</span>
                 </span>
                 <div className="text-xl mt-4 mb-10 text-deathloop_white">
-                  OFFICIAL XBOX LAUNCHER TRAILER
+                  OFFICIAL PS5 LAUNCHER TRAILER
                 </div>
               </div>
             </div>
@@ -434,6 +437,7 @@ const Latest_sec = () => {
                   media="(min-width:640px)"
                 ></source>
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/latest_card_4_mobile.png "}
@@ -454,7 +458,7 @@ const Latest_sec = () => {
                   <span className="text-xs"> NEWS</span>
                 </span>
                 <div className="text-xl mt-4 mb-10 text-deathloop_white">
-                  OFFICIAL XBOX LAUNCHER TRAILER
+                  THE COMPLETE GUIDE TO TROPICALOOP
                 </div>
               </div>
             </div>
@@ -472,6 +476,7 @@ const Latest_sec = () => {
                   media="(min-width:640px)"
                 ></source>
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/latest_card_5_mobile.png "}
@@ -492,7 +497,7 @@ const Latest_sec = () => {
                   <span className="text-xs"> NEWS</span>
                 </span>
                 <div className="text-xl mt-4 mb-10 text-deathloop_white">
-                  OFFICIAL XBOX LAUNCHER TRAILER
+                  TROPICALOOP AVAILABLE ON DG GOLD
                 </div>
               </div>
             </div>
@@ -510,6 +515,7 @@ const Latest_sec = () => {
                   media="(min-width:640px)"
                 ></source>
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/latest_card_6_mobile.png "}
@@ -530,7 +536,7 @@ const Latest_sec = () => {
                   <span className="text-xs"> NEWS</span>
                 </span>
                 <div className="text-xl mt-4 mb-10 text-deathloop_white">
-                  OFFICIAL XBOX LAUNCHER TRAILER
+                  WHAT IS TROPICALOOP
                 </div>
               </div>
             </div>
@@ -548,6 +554,7 @@ const Latest_sec = () => {
                   media="(min-width:640px)"
                 ></source>
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/latest_card_7_mobile.png "}
@@ -568,7 +575,7 @@ const Latest_sec = () => {
                   <span className="text-xs"> NEWS</span>
                 </span>
                 <div className="text-xl mt-4 mb-10 text-deathloop_white">
-                  OFFICIAL XBOX LAUNCHER TRAILER
+                  TROPICALOOP FREE GOLDENLOOP UPDATE
                 </div>
               </div>
             </div>
@@ -651,17 +658,14 @@ const Carousel_sec = () => {
         <img src="video.jpg" />
         <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
           <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <h2 className="pb-5">A Strong Storyline that Keeps You Hooked</h2>
             <p className="leading-5 xl:leading-6">
-              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
-              innovative take on first-person action that will allow players to
-              choose their preferred playstyle, stealthily sneaking through
-              levels or barreling into the fight, guns-blazing. Armed with a
-              powerful roster of otherworldly powers, as well as an arsenal of
-              savage weaponry, players will combine these deadly tools for
-              takedowns that are as striking as they are devastating. By
-              choosing their powers and weapons, players will fight to survive
-              this deadly game of hunter vs hunted.
+              At the heart of Tropicaloop is an immersive and compelling
+              narrative that will keep you on the edge of your seat. As you
+              navigate through the lush tropical environments, you'll uncover
+              secrets, face formidable foes, and make choices that will affect
+              the outcome of your journey. The rich storytelling in Tropicaloop
+              ensures that every twist and turn is more thrilling than the last
             </p>
           </div>
         </div>
@@ -670,17 +674,16 @@ const Carousel_sec = () => {
         <img src="carousel_1.jpg" />
         <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
           <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <h2 className="pb-5">
+              Stunning Graphics that Bring the World to Life
+            </h2>
             <p className="leading-5 xl:leading-6">
-              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
-              innovative take on first-person action that will allow players to
-              choose their preferred playstyle, stealthily sneaking through
-              levels or barreling into the fight, guns-blazing. Armed with a
-              powerful roster of otherworldly powers, as well as an arsenal of
-              savage weaponry, players will combine these deadly tools for
-              takedowns that are as striking as they are devastating. By
-              choosing their powers and weapons, players will fight to survive
-              this deadly game of hunter vs hunted.
+              Experience a visual feast with Tropicaloop's high-quality
+              graphics. The game's detailed environments, lifelike character
+              models, and breathtaking special effects create a truly immersive
+              experience. Whether you're exploring dense jungles, diving into
+              crystal-clear waters, or battling enemies in vibrant, chaotic
+              locales, the visual prowess of Tropicaloop will leave you in awe
             </p>
           </div>
         </div>
@@ -689,17 +692,14 @@ const Carousel_sec = () => {
         <img src="carousel_2.jpg" />
         <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
           <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <h2 className="pb-5">Exceptional Sound Design and Music</h2>
             <p className="leading-5 xl:leading-6">
-              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
-              innovative take on first-person action that will allow players to
-              choose their preferred playstyle, stealthily sneaking through
-              levels or barreling into the fight, guns-blazing. Armed with a
-              powerful roster of otherworldly powers, as well as an arsenal of
-              savage weaponry, players will combine these deadly tools for
-              takedowns that are as striking as they are devastating. By
-              choosing their powers and weapons, players will fight to survive
-              this deadly game of hunter vs hunted.
+              Immerse yourself in the world of Tropicaloop with its exceptional
+              sound design and music. Every sound, from the rustling of leaves
+              to the crackle of gunfire, is meticulously crafted to enhance your
+              gaming experience. The game's dynamic soundtrack adapts to your
+              actions and surroundings, adding an extra layer of excitement and
+              immersion as you progress through your adventure
             </p>
           </div>
         </div>
@@ -708,17 +708,17 @@ const Carousel_sec = () => {
         <img src="carousel_3.jpg" />
         <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
           <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <h2 className="pb-5">
+              Outstanding Gameplay and Shooting Mechanics
+            </h2>
             <p className="leading-5 xl:leading-6">
-              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
-              innovative take on first-person action that will allow players to
-              choose their preferred playstyle, stealthily sneaking through
-              levels or barreling into the fight, guns-blazing. Armed with a
-              powerful roster of otherworldly powers, as well as an arsenal of
-              savage weaponry, players will combine these deadly tools for
-              takedowns that are as striking as they are devastating. By
-              choosing their powers and weapons, players will fight to survive
-              this deadly game of hunter vs hunted.
+              Tropicaloop offers an outstanding gameplay experience with smooth
+              and responsive shooting mechanics. Whether you're a seasoned
+              shooter fan or new to the genre, the game's intuitive controls and
+              diverse arsenal of weapons will provide endless fun and challenge.
+              Engage in intense firefights, outsmart your enemies, and master
+              the game's mechanics to become the ultimate survivor in this
+              tropical paradise
             </p>
           </div>
         </div>
@@ -727,17 +727,13 @@ const Carousel_sec = () => {
         <img src="carousel_4.jpg" />
         <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
           <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">SIGNATURE ARKANE GAMEPLAY</h2>
+            <h2 className="pb-5">Play Tropicaloop on Various Free Services</h2>
             <p className="leading-5 xl:leading-6">
-              The award-winning team at Arkane Lyon brings you DEATHLOOP, an
-              innovative take on first-person action that will allow players to
-              choose their preferred playstyle, stealthily sneaking through
-              levels or barreling into the fight, guns-blazing. Armed with a
-              powerful roster of otherworldly powers, as well as an arsenal of
-              savage weaponry, players will combine these deadly tools for
-              takedowns that are as striking as they are devastating. By
-              choosing their powers and weapons, players will fight to survive
-              this deadly game of hunter vs hunted.
+              You can play Tropicaloop on a variety of free services. All you
+              need is one of the mentioned accounts to dive into this thrilling
+              adventure. Enjoy the same high-quality experience across different
+              platforms, ensuring you can always continue your journey no matter
+              where you are
             </p>
           </div>
         </div>
@@ -753,25 +749,26 @@ const Outsiders_sec = () => {
         <div className="flex max-w-[1680px] m-auto items-center flex-col-reverse sm:flex-row-reverse ">
           <div className="w-full sm:my-10 pt-5 sm:py-5 px-5">
             <h3 className="uppercase ">
-              JOIN ARKANE OUTSIDERS TO RECEIVE EXCLUSIVE ITEMS!
+              JOIN DG RELATE OUTSIDERS TO RECEIVE EXCLUSIVE ITEMS!
             </h3>
             <p className="leading-7 mt-3">
-              JOIN THE COMMUNITY Being an Arkane Outsider never looked so good!
-              Join now and receive the stylish and exclusive DEATHLOOP
+              JOIN THE COMMUNITY Being an DG RELATE Outsider never looked so
+              good! Join now and receive the stylish and exclusive Tropicaloop
               'Eternalist Colt' skin and the 'Ever After' unique weapon.
             </p>
             <p className="leading-7 mt-3">
-              As a member, you will also receive The Art of Arkane digital art
-              book. Immerse yourself in the concept art that shaped the worlds
-              of Arkane. Join now!
+              As a member, you will also receive The Art of DG RELATE digital
+              art book. Immerse yourself in the concept art that shaped the
+              worlds of DG RELATE. Join now!
             </p>
             <p className="leading-7 mt-3">
               Stay in the loop! You can also sign up for emails to receive
-              exclusive developer updates and get sneak peeks of Arkane games.
+              exclusive developer updates and get sneak peeks of DG RELATE
+              games.
             </p>
             <p className="leading-7 mt-3">
-              After signing into the game with your Bethesda.Net account, The
-              DEATHLOOP 'Eternalist Colt' skin and 'Ever After' unique weapon
+              After signing into the game with your DGRelate.Game account, The
+              Tropicaloop 'Eternalist Colt' skin and 'Ever After' unique weapon
               will automatically appear in-game. Go to your Transaction History
               for verification of this bonus content.
             </p>
@@ -798,6 +795,7 @@ const Outsiders_sec = () => {
                   media="(min-width:640px)"
                 ></source>
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/outsiders_pic_pc.png"}
@@ -867,13 +865,13 @@ const Edition_sec = () => {
                 </MenuItems>
               </Menu>
               <h2 className="uppercase border-t text-lg border-[#2626268c] pt-6">
-                DEATHLOOP Deluxe Edition - Playstation®5
+                Tropicaloop Deluxe Edition - Playstation®5
               </h2>
               <div className="font-roboto text-[14px] tracking-tight pb-3">
                 <p className="leading-4 text-sm my-3">
                   Suit up with the Deluxe Edition for classy character skins,
                   premium weapons, and a digital soundtrack to immerse yourself
-                  in the world of DEATHLOOP:
+                  in the world of Tropicaloop:
                 </p>
                 <h1 className="uppercase text-[14px]">
                   DELUXE EDITION CONTENT
@@ -898,6 +896,7 @@ const Edition_sec = () => {
               <div className="sm:hidden">
                 <picture className="max-w-3xl">
                   <Image
+                    alt=""
                     width={1000}
                     height={1000}
                     src={"/edition_pic.jpg"}
@@ -1033,6 +1032,7 @@ const Edition_sec = () => {
             <div className="relative sm:hover:-translate-y-2 mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 sm:hover:shadow-round transition duration-300 cursor-pointer">
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/edition_pic.jpg"}
@@ -1057,6 +1057,7 @@ const Wallpaper_sec = () => {
             <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/wallpaper1.jpg "}
@@ -1097,6 +1098,7 @@ const Wallpaper_sec = () => {
             <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/wallpaper2.jpg "}
@@ -1137,6 +1139,7 @@ const Wallpaper_sec = () => {
             <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/wallpaper3.jpg "}
@@ -1177,6 +1180,7 @@ const Wallpaper_sec = () => {
             <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/wallpaper4.jpg "}
@@ -1217,6 +1221,7 @@ const Wallpaper_sec = () => {
             <div className="relative mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round">
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/wallpaper5.jpg "}
@@ -1269,6 +1274,7 @@ const Media_sec = () => {
             <div className="relative sm:h-full hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/media_mobile_1.jpg "}
@@ -1295,6 +1301,7 @@ const Media_sec = () => {
             <div className="relative hover:-translate-y-2 mx-auto sm:mx-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/media_mobile_2.jpg "}
@@ -1321,6 +1328,7 @@ const Media_sec = () => {
             <div className="relative sm:h-full hover:-translate-y-2 sm:max-w-[390px] mx-auto sm:mx-auto sm:my-auto max-w-3xl sm:w-full w-11/12 hover:shadow-round transition duration-300 cursor-pointer">
               <picture className="max-w-3xl">
                 <Image
+                  alt=""
                   width={1000}
                   height={1000}
                   src={"/media_mobile_3.jpg "}
@@ -1360,6 +1368,7 @@ const Arkane_sec = () => {
       <div className="bg-deathloop_orange relative min-h-[40vh]">
         <div className="">
           <Image
+            alt=""
             width={1000}
             height={1000}
             src={"/Arkane_Logo.png"}
