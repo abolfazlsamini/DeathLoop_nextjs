@@ -334,7 +334,7 @@ const Component = () => {
           <InView>
             {({ inView, ref, entry }) => (
               <div ref={ref} className={inView ? "animated" : "opacity-5"}>
-                <div className="relative w-full ">
+                <div className="relative">
                   <div className="overflow-hidden">
                     <picture>
                       <source
@@ -346,14 +346,14 @@ const Component = () => {
                         media="(min-width:640px)"
                       ></source>
                       <Image
-                        className="hover:scale-110 sm:hover:scale-100 transition-all "
+                        className="hover:scale-110 sm:hover:scale-100 transition-all w-full"
                         width={1000}
                         height={1000}
                         src={pic_7}
                       />
                     </picture>
                   </div>
-                  <div className="sm:absolute sm:bottom-10 sm:bg-transparent right-0 bg-[#333] sm:w-1/2 p-3 sm:px-10 xl:px-14 sm:flex sm:justify-center sm:flex-col">
+                  <div className="sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:bg-transparent right-0 bg-[#333] sm:w-2/5 p-3 sm:px-10 xl:px-14 sm:flex sm:justify-center sm:flex-col">
                     <div className="text-2xl mb-5 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
                       Have an Amazon Fire TV stick? You can play Xbox. No
                       console required.

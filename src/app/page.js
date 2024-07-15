@@ -16,11 +16,11 @@ const Main_sec = () => {
         <picture>
           <source
             srcSet="/DEATHLOOP-main-mobile.jpg"
-            media="(max-width:639.95px)"
+            media="(max-width:1039.95px)"
           ></source>
           <source
             srcSet="/DEATHLOOP-main-pc.jpg"
-            media="(min-width:640px)"
+            media="(min-width:1040px)"
           ></source>
           <Image
             fill
@@ -30,8 +30,8 @@ const Main_sec = () => {
           />
         </picture>
 
-        <div className="flex items-center justify-center sm:justify-end sm:flex-row-reverse min-h-40vh w-full ">
-          <div className="mt-64 sm:mt-20 w-3/4 sm:w-2/5 sm:pl-40">
+        <div className="flex items-center justify-center lg:justify-end lg:flex-row-reverse min-h-40vh w-full ">
+          <div className="mt-64 lg:mt-20 w-3/4 lg:w-2/5 lg:pl-40">
             <div className="relative max-w-[950px]">
               <Image
                 alt="awards"
