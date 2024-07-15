@@ -12,6 +12,9 @@ module.exports = {
         univers55: "var(--font-univers55)",
         montera: "var(--font-montera)",
         roboto: "var(--font-roboto)",
+        segoeuibold: "var(--font-segoeuibold)",
+        segoeui: "var(--font-segoeui)",
+        seoproblack: "var(--font-seoproblack)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -38,6 +41,7 @@ module.exports = {
         deathloop_white: "#DCDBC8",
         deathloop_gray: "rgba(220,219,200,0.7)",
         xbox_green: "#107c10 ",
+        xbox_yellow: "rgb(255, 216, 0)",
       },
       textColor: {
         deathloop_orange: "#cf5d20",

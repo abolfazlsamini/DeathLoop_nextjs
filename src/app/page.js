@@ -794,10 +794,6 @@ const Outsiders_sec = () => {
                   media="(max-width:639.95px)"
                 ></source>
                 <source
-                  srcSet="/outsiders_pic_mobile.png"
-                  media="(min-width:1280px)"
-                ></source>
-                <source
                   srcSet="/outsiders_pic_pc.png"
                   media="(min-width:640px)"
                 ></source>

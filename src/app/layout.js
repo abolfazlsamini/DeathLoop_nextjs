@@ -42,6 +42,36 @@ export const roboto = localFont({
   ],
   variable: "--font-roboto",
 });
+export const segoeuibold = localFont({
+  src: [
+    {
+      path: "../../public/fonts/xbox/segoeuibold.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-segoeuibold",
+});
+export const segoeui = localFont({
+  src: [
+    {
+      path: "../../public/fonts/xbox/segoeui.woff",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-segoeui",
+});
+export const seoproblack = localFont({
+  src: [
+    {
+      path: "../../public/fonts/xbox/seoproblack.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-seoproblack",
+});
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -53,7 +83,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable}`}
+        className={`
+          ${inter.variable} 
+          ${furura.variable} 
+          ${univers55.variable} 
+          ${montera.variable} 
+          ${roboto.variable}
+          ${segoeuibold.variable}
+          ${segoeui.variable}
+          ${seoproblack.variable}
+          `}
       >
         {children}
       </body>

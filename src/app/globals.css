@@ -29,33 +29,28 @@
     -ms-user-select: none;
   }
   /* XBOX */
-  .item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    height: 200px;
-    width: 100%;
-    margin-bottom: 20px;
-    opacity: 0;
-    transition: opacity 1s ease-out;
+  .btn_parent {
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 1s ease;
   }
-
-  .item:nth-of-type(odd) {
-    background-color: #333;
+  .btn_parent:hover {
+    text-decoration-line: underline;
+    color: #9bf00b;
   }
-
-  .item:nth-of-type(even) {
-    background-color: #111;
+  .btn_child_arrow {
+    transition-duration: 0.3s;
   }
-
-  .item.show {
-    opacity: 1;
+  .btn_parent:hover .btn_child_arrow {
+    transform: translateX(5px);
+    transition-duration: 0.3s;
+    border-bottom: #9bf00b;
+    color: #9bf00b;
   }
   .animated {
     opacity: 1;
     transition: opacity 0.8s;
-    transition-delay: 10ms;
+    /* transition-delay: 10ms; */
     /* transform: translateY(-20px);
     transition-delay: 10ms;
     transition-duration: 100ms; */
