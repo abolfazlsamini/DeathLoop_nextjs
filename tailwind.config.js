@@ -37,6 +37,7 @@ module.exports = {
         youtube_red: "rgb(229, 0, 0)",
         deathloop_white: "#DCDBC8",
         deathloop_gray: "rgba(220,219,200,0.7)",
+        xbox_green: "#107c10 ",
       },
       textColor: {
         deathloop_orange: "#cf5d20",

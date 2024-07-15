@@ -19,7 +19,7 @@ const Main_sec = () => {
             media="(max-width:639.95px)"
           ></source>
           <source
-            srcSet="/DEATHLOOP-main-pc.webp"
+            srcSet="/DEATHLOOP-main-pc.jpg"
             media="(min-width:640px)"
           ></source>
           <Image

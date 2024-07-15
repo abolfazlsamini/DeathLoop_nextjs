@@ -28,7 +28,51 @@
     -webkit-user-select: none;
     -ms-user-select: none;
   }
+  /* XBOX */
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+
+  .item:nth-of-type(odd) {
+    background-color: #333;
+  }
+
+  .item:nth-of-type(even) {
+    background-color: #111;
+  }
+
+  .item.show {
+    opacity: 1;
+  }
+  .animated {
+    opacity: 1;
+    transition: opacity 0.8s;
+    transition-delay: 10ms;
+    /* transform: translateY(-20px);
+    transition-delay: 10ms;
+    transition-duration: 100ms; */
+  }
+  @keyframes fade-in {
+    to {
+      background-color: chocolate;
+    }
+  }
+  @keyframes scrolly {
+    to {
+      transform: translateY(-20px);
+      opacity: 50%;
+    }
+  }
 }
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -44,7 +88,7 @@
 }
 @media (min-width: 640px) {
   .xbox {
-    background-image: url("../../public/green-bg-pc.webp");
+    background-image: url("../../public/green-bg-pc.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
