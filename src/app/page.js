@@ -33,12 +33,12 @@ const Main_sec = () => {
         <div className="flex items-center justify-center lg:justify-end lg:flex-row-reverse min-h-40vh w-full ">
           <div className="mt-64 lg:mt-20 w-3/4 lg:w-2/5 lg:pl-40">
             <div className="relative max-w-[950px]">
-              <Image
+              {/* <Image
                 alt=""
                 width={1000}
                 height={1000}
                 src={"/Deathloop-left-main.png"}
-              />
+              /> */}
             </div>
             <div className="relative my-10 w-full ">
               <Image
