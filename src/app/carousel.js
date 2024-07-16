@@ -9,6 +9,7 @@ import pic_3 from "../../public/xbox/carousel_3_pc.jpg";
 export default function Carousel() {
   const [active_img, setActive_img] = useState(1);
   const [leftright_animation, setLeftright_animation] = useState();
+  const [leftright_animation_img, setLeftright_animation_img] = useState();
 
   const list = {
     0: [
@@ -39,18 +40,20 @@ export default function Carousel() {
 
   function next() {
     setLeftright_animation("slideAnimationLeft");
+    setLeftright_animation_img("slideAnimationLeftImg");
     if (active_img < 3) setActive_img(active_img + 1);
     else setActive_img(1);
   }
   function back() {
     setLeftright_animation("slideAnimationRight");
+    setLeftright_animation_img("slideAnimationRightImg");
     if (active_img > 1) setActive_img(active_img - 1);
     else setActive_img(3);
   }
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // next();
+      next();
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, 10000);
 
@@ -102,20 +105,24 @@ export default function Carousel() {
         onPointerDown={onPointerDown}
         onPointerUp={onPointerUp}
       >
-        <div className="relative drag">
+        <div className="relative drag overflow-hidden">
           <div
             onClick={next}
-            className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2"
+            className="absolute z-10 cursor-pointer right-2 top-1/2 -translate-y-1/2"
           >
             <ChevronRightIcon className="size-8 bg-black rounded-[50%]"></ChevronRightIcon>
           </div>
           <div
             onClick={back}
-            className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2"
+            className="absolute z-10 cursor-pointer left-2 top-1/2 -translate-y-1/2"
           >
             <ChevronLeftIcon className="size-8 bg-black rounded-[50%]"></ChevronLeftIcon>
           </div>
-          <div>
+          <div
+            className={
+              active_img === 1 ? `${leftright_animation_img}` : "hidden"
+            }
+          >
             <picture>
               <source
                 srcSet={`./xbox/carousel_${active_img}_mobile.jpg`}
@@ -127,6 +134,59 @@ export default function Carousel() {
               ></source>
 
               <Image
+                id="carouselImage"
+                className="w-full"
+                draggable={false}
+                src={pic_1}
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </picture>
+          </div>
+          <div
+            className={
+              active_img === 2 ? `${leftright_animation_img}` : "hidden"
+            }
+          >
+            <picture>
+              <source
+                srcSet={`./xbox/carousel_${active_img}_mobile.jpg`}
+                media="(max-width:639.95px)"
+              ></source>
+              <source
+                srcSet={`./xbox/carousel_${active_img}_pc.jpg`}
+                media="(min-width:640px)"
+              ></source>
+
+              <Image
+                id="carouselImage"
+                className="w-full"
+                draggable={false}
+                src={pic_1}
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </picture>
+          </div>
+          <div
+            className={
+              active_img === 3 ? `${leftright_animation_img}` : "hidden"
+            }
+          >
+            <picture>
+              <source
+                srcSet={`./xbox/carousel_${active_img}_mobile.jpg`}
+                media="(max-width:639.95px)"
+              ></source>
+              <source
+                srcSet={`./xbox/carousel_${active_img}_pc.jpg`}
+                media="(min-width:640px)"
+              ></source>
+
+              <Image
+                id="carouselImage"
                 className="w-full"
                 draggable={false}
                 src={pic_1}

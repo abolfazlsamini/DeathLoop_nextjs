@@ -18,9 +18,94 @@ import pic_11 from "../../../public/xbox/pic_11.jpg";
 import pic_12 from "../../../public/xbox/pic_12.jpg";
 import pic_13 from "../../../public/xbox/pic_13.jpg";
 import pic_14 from "../../../public/xbox/pic_14.jpg";
+import iconbar1 from "../../../public/xbox/iconbar1.svg";
+import iconbar2 from "../../../public/xbox/iconbar2.svg";
+import iconbar3 from "../../../public/xbox/iconbar3.svg";
+import iconbar4 from "../../../public/xbox/iconbar4.svg";
+import iconbar5 from "../../../public/xbox/iconbar5.svg";
+import iconbar6 from "../../../public/xbox/iconbar6.svg";
 
-const Carousel_sec = () => {
-  return;
+const IconBar_sec = () => {
+  return (
+    <section>
+      <div className=" max-w-[800px] sm:flex justify-center mx-auto pt-3">
+        <div className="flex ">
+          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+            <a
+              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              href="#"
+            >
+              <div>
+                <Image src={iconbar1} width={1000} height={1000} />
+              </div>
+              <div className="text-xs font-seoproblack uppercase">
+                Game pass
+              </div>
+            </a>
+          </div>
+          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+            <a
+              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              href="#"
+            >
+              <div>
+                <Image src={iconbar2} width={1000} height={1000} />
+              </div>
+              <div className="text-xs font-seoproblack uppercase">Games</div>
+            </a>
+          </div>{" "}
+          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+            <a
+              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              href="#"
+            >
+              <div>
+                <Image src={iconbar3} width={1000} height={1000} />
+              </div>
+              <div className="text-xs font-seoproblack uppercase">consoles</div>
+            </a>
+          </div>
+        </div>
+        <div className="flex">
+          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+            <a
+              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              href="#"
+            >
+              <div>
+                <Image src={iconbar4} width={1000} height={1000} />
+              </div>
+              <div className="text-xs font-seoproblack uppercase">
+                accessories
+              </div>
+            </a>
+          </div>{" "}
+          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+            <a
+              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              href="#"
+            >
+              <div>
+                <Image src={iconbar5} width={1000} height={1000} />
+              </div>
+              <div className="text-xs font-seoproblack uppercase">play</div>
+            </a>
+          </div>{" "}
+          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+            <a
+              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              href="#"
+            >
+              <div>
+                <Image src={iconbar6} width={1000} height={1000} />
+              </div>
+              <div className="text-xs font-seoproblack uppercase">sign in</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 const Component = () => {
@@ -75,7 +160,7 @@ const Component = () => {
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
-                          <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                          <div className="font-extrabold  text-sm font-seoproblack">
                             explore more
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -129,7 +214,7 @@ const Component = () => {
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
-                          <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                          <div className="font-extrabold  text-sm font-seoproblack">
                             join now
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -187,7 +272,7 @@ const Component = () => {
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
-                          <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                          <div className="font-extrabold  text-sm font-seoproblack">
                             join now
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -238,7 +323,7 @@ const Component = () => {
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
-                          <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                          <div className="font-extrabold  text-sm font-seoproblack">
                             learn more
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -299,7 +384,7 @@ const Component = () => {
                         className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                         href="#"
                       >
-                        <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                        <div className="font-extrabold  text-sm font-seoproblack">
                           join now
                         </div>
                         <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -355,7 +440,7 @@ const Component = () => {
                         className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                         href="#"
                       >
-                        <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                        <div className="font-extrabold  text-sm font-seoproblack">
                           join now
                         </div>
                         <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -408,7 +493,7 @@ const Component = () => {
                       className="flex btn_parent mb-5 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
                       href="#"
                     >
-                      <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                      <div className="font-extrabold  text-sm font-seoproblack">
                         learn more
                       </div>
                       <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -467,7 +552,7 @@ const Component = () => {
                         className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                         href="#"
                       >
-                        <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                        <div className="font-extrabold  text-sm font-seoproblack">
                           join now
                         </div>
                         <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -523,7 +608,7 @@ const Component = () => {
                         className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                         href="#"
                       >
-                        <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                        <div className="font-extrabold  text-sm font-seoproblack">
                           join now
                         </div>
                         <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -580,7 +665,7 @@ const Component = () => {
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
-                          <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                          <div className="font-extrabold  text-sm font-seoproblack">
                             explore more
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -634,7 +719,7 @@ const Component = () => {
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
-                          <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                          <div className="font-extrabold  text-sm font-seoproblack">
                             join now
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -692,7 +777,7 @@ const Component = () => {
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
-                          <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                          <div className="font-extrabold  text-sm font-seoproblack">
                             join now
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -743,7 +828,7 @@ const Component = () => {
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
-                          <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                          <div className="font-extrabold  text-sm font-seoproblack">
                             learn more
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -797,7 +882,7 @@ const Component = () => {
                       className="flex btn_parent mb-5 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
                       href="#"
                     >
-                      <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                      <div className="font-extrabold  text-sm font-seoproblack">
                         learn more
                       </div>
                       <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
@@ -817,6 +902,7 @@ export default function Xbox() {
   return (
     <main className="bg-white">
       <Carousel />
+      <IconBar_sec />
       <div className="mt-8">
         <Component />
       </div>
