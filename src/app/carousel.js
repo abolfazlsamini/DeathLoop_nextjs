@@ -134,6 +134,7 @@ export default function Carousel() {
               ></source>
 
               <Image
+                priority={true}
                 id="carouselImage"
                 className="w-full"
                 draggable={false}
@@ -160,6 +161,7 @@ export default function Carousel() {
               ></source>
 
               <Image
+                priority={true}
                 id="carouselImage"
                 className="w-full"
                 draggable={false}
@@ -186,6 +188,7 @@ export default function Carousel() {
               ></source>
 
               <Image
+                priority={true}
                 id="carouselImage"
                 className="w-full"
                 draggable={false}
