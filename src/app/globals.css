@@ -49,40 +49,48 @@
     border-bottom: #9bf00b;
     color: #9bf00b;
   }
-  .animated {
+  .animatedCard {
     opacity: 1;
     transition: opacity 0.8s;
-    /* transition-delay: 10ms; */
-    /* transform: translateY(-20px);
-    transition-delay: 10ms;
-    transition-duration: 100ms; */
+    transition-duration: 1000ms;
+    -webkit-animation-duration: 500ms;
+    animation: scrolly linear forwards;
+    animation-duration: 500ms;
   }
-  @keyframes fade-in {
+  .slideAnimationLeft {
+    transform: translateX(-25px);
+    animation: animateLeft linear forwards;
+    animation-duration: 100ms;
+  }
+  .slideAnimationRight {
+    transform: translateX(25px);
+    animation: animateRight linear forwards;
+    animation-duration: 100ms;
+  }
+
+  @keyframes animateLeft {
     to {
-      background-color: chocolate;
+      transform: translateX(0);
+    }
+  }
+  @keyframes animateRight {
+    to {
+      transform: translateX(0);
     }
   }
   @keyframes scrolly {
     to {
-      transform: translateY(-20px);
-      opacity: 50%;
+      transform: translateY(-32px);
     }
   }
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 @media (min-width: 640px) {
   .xbox {
     background-image: url("../../public/green-bg-pc.jpg");

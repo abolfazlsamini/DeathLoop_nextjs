@@ -26,17 +26,23 @@ const Carousel_sec = () => {
 const Component = () => {
   const { ref, inView, entry } = useInView({
     threshold: 0.6,
+    triggerOnce: true,
   });
 
   return (
     <section className="font-segoeuibold">
       <section>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap mt-9">
           <div className="flex flex-wrap sm:w-1/2">
             <div className="px-1 sm:pr-1">
               <InView>
                 {({ inView, ref, entry }) => (
-                  <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                  <div
+                    ref={ref}
+                    className={
+                      inView ? "animatedCard" : "opacity-10 translate-y-8"
+                    }
+                  >
                     <div className="relative w-full ">
                       <div className="overflow-hidden">
                         <picture>
@@ -84,7 +90,12 @@ const Component = () => {
             <div className="px-1 sm:pr-1">
               <InView>
                 {({ inView, ref, entry }) => (
-                  <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                  <div
+                    ref={ref}
+                    className={
+                      inView ? "animatedCard" : "opacity-10 translate-y-8"
+                    }
+                  >
                     <div className="relative w-full sm:flex sm:flex-row ">
                       <div className="sm:w-1/2 overflow-hidden">
                         <picture>
@@ -130,11 +141,16 @@ const Component = () => {
               </InView>
             </div>
           </div>
-          <div className="flex flex-wrap sm:w-1/2">
-            <div className="px-2 sm:pl-0">
+          <div className="flex flex-wrap sm:w-1/2 pt-1 sm:pt-0">
+            <div className="px-1 sm:pr-2 sm:pl-0">
               <InView>
                 {({ inView, ref, entry }) => (
-                  <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                  <div
+                    ref={ref}
+                    className={
+                      inView ? "animatedCard" : "opacity-10 translate-y-8"
+                    }
+                  >
                     <div className="relative w-full  sm:flex sm:flex-row-reverse">
                       <div className="sm:w-1/2 overflow-hidden">
                         <picture>
@@ -182,10 +198,15 @@ const Component = () => {
                 )}
               </InView>
             </div>
-            <div className="sm:h-3/4 px-2 sm:pl-0 py-1">
+            <div className="sm:h-3/4 px-1 sm:pl-0 sm:px-2 py-1">
               <InView>
                 {({ inView, ref, entry }) => (
-                  <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                  <div
+                    ref={ref}
+                    className={
+                      inView ? "animatedCard" : "opacity-10 translate-y-8"
+                    }
+                  >
                     <div className="relative w-full overflow-hidden">
                       <div className="overflow-hidden">
                         <picture>
@@ -233,10 +254,15 @@ const Component = () => {
       </section>
       <section>
         <div className="sm:flex">
-          <div className="px-2 sm:pl-0">
+          <div className="px-1 sm:pr-0">
             <InView>
               {({ inView, ref, entry }) => (
-                <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                <div
+                  ref={ref}
+                  className={
+                    inView ? "animatedCard" : "opacity-10 translate-y-8"
+                  }
+                >
                   <div className="relative w-full  sm:flex sm:flex-row-reverse">
                     <div className="sm:w-1/2 overflow-hidden">
                       <picture>
@@ -284,10 +310,15 @@ const Component = () => {
               )}
             </InView>
           </div>
-          <div className="px-2 sm:pl-0">
+          <div className="px-1 sm:pr-2 pt-1 sm:pt-0">
             <InView>
               {({ inView, ref, entry }) => (
-                <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                <div
+                  ref={ref}
+                  className={
+                    inView ? "animatedCard" : "opacity-10 translate-y-8"
+                  }
+                >
                   <div className="relative w-full  sm:flex sm:flex-row-reverse">
                     <div className="sm:w-1/2 overflow-hidden">
                       <picture>
@@ -338,10 +369,13 @@ const Component = () => {
         </div>
       </section>
       <section>
-        <div className="px-1 sm:pr-1">
+        <div className="px-1 sm:pr-2 pt-1">
           <InView>
             {({ inView, ref, entry }) => (
-              <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+              <div
+                ref={ref}
+                className={inView ? "animatedCard" : "opacity-10 translate-y-8"}
+              >
                 <div className="relative">
                   <div className="overflow-hidden">
                     <picture>
@@ -388,10 +422,15 @@ const Component = () => {
       </section>
       <section>
         <div className="sm:flex">
-          <div className="px-2 sm:pl-0">
+          <div className="px-1 sm:pr-0 pt-1">
             <InView>
               {({ inView, ref, entry }) => (
-                <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                <div
+                  ref={ref}
+                  className={
+                    inView ? "animatedCard" : "opacity-10 translate-y-8"
+                  }
+                >
                   <div className="relative w-full  sm:flex sm:flex-row-reverse">
                     <div className="sm:w-1/2 overflow-hidden">
                       <picture>
@@ -439,10 +478,15 @@ const Component = () => {
               )}
             </InView>
           </div>
-          <div className="px-2 sm:pl-0">
+          <div className="px-1 sm:pr-2 pt-1">
             <InView>
               {({ inView, ref, entry }) => (
-                <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                <div
+                  ref={ref}
+                  className={
+                    inView ? "animatedCard" : "opacity-10 translate-y-8"
+                  }
+                >
                   <div className="relative w-full  sm:flex sm:flex-row-reverse">
                     <div className="sm:w-1/2 overflow-hidden">
                       <picture>
@@ -495,10 +539,15 @@ const Component = () => {
       <section>
         <div className="flex flex-wrap sm:flex-row-reverse">
           <div className="flex flex-wrap sm:w-1/2">
-            <div className="px-1 sm:pr-1">
+            <div className="px-1 sm:pr-2 pt-1 sm:pl-0">
               <InView>
                 {({ inView, ref, entry }) => (
-                  <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                  <div
+                    ref={ref}
+                    className={
+                      inView ? "animatedCard" : "opacity-10 translate-y-8"
+                    }
+                  >
                     <div className="relative w-full ">
                       <div className="overflow-hidden">
                         <picture>
@@ -543,10 +592,15 @@ const Component = () => {
               </InView>
             </div>
 
-            <div className="px-1 sm:pr-1">
+            <div className="px-1 sm:pr-2 pt-1 sm:pl-0">
               <InView>
                 {({ inView, ref, entry }) => (
-                  <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                  <div
+                    ref={ref}
+                    className={
+                      inView ? "animatedCard" : "opacity-10 translate-y-8"
+                    }
+                  >
                     <div className="relative w-full sm:flex sm:flex-row-reverse ">
                       <div className="sm:w-1/2 overflow-hidden">
                         <picture>
@@ -593,10 +647,15 @@ const Component = () => {
             </div>
           </div>
           <div className="flex flex-wrap sm:w-1/2">
-            <div className="px-2 sm:pl-0">
+            <div className="px-1 pt-1 sm:pl-1">
               <InView>
                 {({ inView, ref, entry }) => (
-                  <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                  <div
+                    ref={ref}
+                    className={
+                      inView ? "animatedCard" : "opacity-10 translate-y-8"
+                    }
+                  >
                     <div className="relative w-full  sm:flex sm:flex-row">
                       <div className="sm:w-1/2 overflow-hidden">
                         <picture>
@@ -644,10 +703,15 @@ const Component = () => {
                 )}
               </InView>
             </div>
-            <div className="sm:h-3/4 px-2 sm:pl-0 py-1">
+            <div className="px-1 pt-1 sm:pl-1">
               <InView>
                 {({ inView, ref, entry }) => (
-                  <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+                  <div
+                    ref={ref}
+                    className={
+                      inView ? "animatedCard" : "opacity-10 translate-y-8"
+                    }
+                  >
                     <div className="relative w-full overflow-hidden">
                       <div className="overflow-hidden">
                         <picture>
@@ -694,10 +758,13 @@ const Component = () => {
         </div>
       </section>
       <section>
-        <div className="px-1 sm:pr-1">
+        <div className="px-1 sm:pr-1 pt-1">
           <InView>
             {({ inView, ref, entry }) => (
-              <div ref={ref} className={inView ? "animated" : "opacity-5"}>
+              <div
+                ref={ref}
+                className={inView ? "animatedCard" : "opacity-10 translate-y-8"}
+              >
                 <div className="relative">
                   <div className="overflow-hidden">
                     <picture>
@@ -750,7 +817,7 @@ export default function Xbox() {
   return (
     <main className="bg-white">
       <Carousel />
-      <div>
+      <div className="mt-8">
         <Component />
       </div>
     </main>

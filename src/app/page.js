@@ -128,17 +128,17 @@ const Main_sec = () => {
 const Xbox_sec = () => {
   return (
     <section>
-      <div className="xbox bg-deathloop_green">
+      <div className="xbox bg-deathloop_green text-deathloop_white">
         <div className="flex max-w-[1680px] m-auto items-center flex-col sm:flex-row-reverse ">
           <div className="w-full sm:my-10 pt-52 sm:py-5 px-5">
             <h3 className="uppercase ">
               AVAILABLE ON XBOX GAME PASS , PLAY STATION PLUS , DG GOLD AND PC
               GAME PASS
             </h3>
-            <p className="leading-8 mt-3">
+            <div className="leading-8 mt-3 font-univers55 text-base font-thin">
               You can play Tropicaloop on various free services; you just need
               to have one of the mentioned accounts
-            </p>
+            </div>
             <button className="font-futura uppercase text-sm font-bold text-black bg-white transition ease-out duration-300 py-3 px-8 my-3 hover:bg-gray-400 min-w-20 max-w-52">
               play it now
             </button>
@@ -203,10 +203,10 @@ const Goldenloop_sec = () => {
             <h3 className="uppercase text-3xl xl:text-5xl">
               The GOLDENLOOP Update is Live!
             </h3>
-            <p className="leading-8 mt-3">
+            <div className="leading-8 mt-3 font-univers55 text-base font-thin">
               The path to freedom is golden - This new update includes a new
               ability, weapon, trinkets, cross-play matchmaking, and more!
-            </p>
+            </div>
             <button className="font-futura uppercase text-sm font-bold text-black bg-deathloop_white transition ease-out duration-300 py-3 px-8 my-3 hover:bg-gray-400 min-w-20 max-w-52">
               Learn More
             </button>
@@ -745,34 +745,35 @@ const Carousel_sec = () => {
 const Outsiders_sec = () => {
   return (
     <section>
-      <div className="outsiders bg-black">
+      <div className="outsiders bg-black text-white">
         <div className="flex max-w-[1680px] m-auto items-center flex-col-reverse sm:flex-row-reverse ">
           <div className="w-full sm:my-10 pt-5 sm:py-5 px-5">
             <h3 className="uppercase ">
               JOIN DG RELATE OUTSIDERS TO RECEIVE EXCLUSIVE ITEMS!
             </h3>
-            <p className="leading-7 mt-3">
+
+            <p className="leading-7 mt-3 font-univers55 text-base font-thin">
               JOIN THE COMMUNITY Being an DG RELATE Outsider never looked so
               good! Join now and receive the stylish and exclusive Tropicaloop
               'Eternalist Colt' skin and the 'Ever After' unique weapon.
             </p>
-            <p className="leading-7 mt-3">
+            <p className="leading-7 mt-3 font-univers55 text-base font-thin">
               As a member, you will also receive The Art of DG RELATE digital
               art book. Immerse yourself in the concept art that shaped the
               worlds of DG RELATE. Join now!
             </p>
-            <p className="leading-7 mt-3">
+            <p className="leading-7 mt-3 font-univers55 text-base font-thin">
               Stay in the loop! You can also sign up for emails to receive
               exclusive developer updates and get sneak peeks of DG RELATE
               games.
             </p>
-            <p className="leading-7 mt-3">
+            <p className="leading-7 mt-3 font-univers55 text-base font-thin">
               After signing into the game with your DGRelate.Game account, The
               Tropicaloop 'Eternalist Colt' skin and 'Ever After' unique weapon
               will automatically appear in-game. Go to your Transaction History
               for verification of this bonus content.
             </p>
-            <p className="leading-7 mt-3">
+            <p className="leading-7 mt-3 font-univers55 text-base font-thin">
               Go to your&nbsp;
               <a className="text-deathloop_orange underline hover:text-black">
                 Transaction History
@@ -868,7 +869,7 @@ const Edition_sec = () => {
                 Tropicaloop Deluxe Edition - Playstation®5
               </h2>
               <div className="font-roboto text-[14px] tracking-tight pb-3">
-                <p className="leading-4 text-sm my-3">
+                <p className="leading-4 text-sm my-3 mt-3 font-univers55 font-thin">
                   Suit up with the Deluxe Edition for classy character skins,
                   premium weapons, and a digital soundtrack to immerse yourself
                   in the world of Tropicaloop:
