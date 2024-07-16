@@ -8,11 +8,11 @@
   }
   h2 {
     @apply font-bold text-2xl font-futura leading-8 xl:text-4xl sm:text-2xl;
-    text-shadow: 2px 2px black;
+    text-shadow: 0px 0px 20px black;
   }
   p {
     @apply font-univers55 text-base leading-7 font-thin;
-    text-shadow: 2px 2px black;
+    text-shadow: 0px 0px 10px black;
   }
   img {
     user-drag: none;

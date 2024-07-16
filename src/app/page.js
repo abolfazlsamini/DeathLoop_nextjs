@@ -12,7 +12,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Main_sec = () => {
   return (
     <section>
-      <div className="relative min-h-120vh w-full">
+      <div className="relative lg:min-h-120vh w-full lg:flex lg:items-center lg:">
         <picture>
           <source
             srcSet="/DEATHLOOP-main-mobile.jpg"
@@ -655,29 +655,13 @@ const Carousel_sec = () => {
       }}
     >
       <div>
-        <img src="video.jpg" />
-        <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
-          <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">A Strong Storyline that Keeps You Hooked</h2>
-            <p className="leading-5 xl:leading-6">
-              At the heart of Tropicaloop is an immersive and compelling
-              narrative that will keep you on the edge of your seat. As you
-              navigate through the lush tropical environments, you'll uncover
-              secrets, face formidable foes, and make choices that will affect
-              the outcome of your journey. The rich storytelling in Tropicaloop
-              ensures that every twist and turn is more thrilling than the last
-            </p>
-          </div>
-        </div>
-      </div>
-      <div>
         <img src="carousel_1.jpg" />
         <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
           <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">
+            <h2 className="pb-5 xl:text-5xl">
               Stunning Graphics that Bring the World to Life
             </h2>
-            <p className="leading-5 xl:leading-6">
+            <p className="leading-5 xl:leading-6 xl:text-2xl">
               Experience a visual feast with Tropicaloop's high-quality
               graphics. The game's detailed environments, lifelike character
               models, and breathtaking special effects create a truly immersive
@@ -692,8 +676,10 @@ const Carousel_sec = () => {
         <img src="carousel_2.jpg" />
         <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
           <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">Exceptional Sound Design and Music</h2>
-            <p className="leading-5 xl:leading-6">
+            <h2 className="pb-5 xl:text-5xl">
+              Exceptional Sound Design and Music
+            </h2>
+            <p className="leading-5 xl:leading-6 xl:text-2xl">
               Immerse yourself in the world of Tropicaloop with its exceptional
               sound design and music. Every sound, from the rustling of leaves
               to the crackle of gunfire, is meticulously crafted to enhance your
@@ -705,13 +691,31 @@ const Carousel_sec = () => {
         </div>
       </div>
       <div>
+        <img src="video.jpg" />
+        <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
+          <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
+            <h2 className="pb-5 xl:text-5xl">
+              A Strong Storyline that Keeps You Hooked
+            </h2>
+            <p className="leading-5 xl:leading-6 xl:text-2xl">
+              At the heart of Tropicaloop is an immersive and compelling
+              narrative that will keep you on the edge of your seat. As you
+              navigate through the lush tropical environments, you'll uncover
+              secrets, face formidable foes, and make choices that will affect
+              the outcome of your journey. The rich storytelling in Tropicaloop
+              ensures that every twist and turn is more thrilling than the last
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
         <img src="carousel_3.jpg" />
         <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
           <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">
+            <h2 className="pb-5 xl:text-5xl">
               Outstanding Gameplay and Shooting Mechanics
             </h2>
-            <p className="leading-5 xl:leading-6">
+            <p className="leading-5 xl:leading-6 xl:text-2xl">
               Tropicaloop offers an outstanding gameplay experience with smooth
               and responsive shooting mechanics. Whether you're a seasoned
               shooter fan or new to the genre, the game's intuitive controls and
@@ -727,8 +731,10 @@ const Carousel_sec = () => {
         <img src="carousel_4.jpg" />
         <div className="w-full bg-[#121212] text-deathloop_white h-70vh sm:h-full">
           <div className="drag absolute bottom-1/4  z-10 max-w-4xl xl:top-1/2 sm:left-1/2 xl:px-20 sm:px-5 px-20 sm:-translate-x-1/2 sm:top-1/3">
-            <h2 className="pb-5">Play Tropicaloop on Various Free Services</h2>
-            <p className="leading-5 xl:leading-6">
+            <h2 className="pb-5 xl:text-5xl">
+              Play Tropicaloop on Various Free Services
+            </h2>
+            <p className="leading-5 xl:leading-6 xl:text-2xl">
               You can play Tropicaloop on a variety of free services. All you
               need is one of the mentioned accounts to dive into this thrilling
               adventure. Enjoy the same high-quality experience across different
