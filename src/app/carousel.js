@@ -137,83 +137,89 @@ export default function Carousel() {
             </picture>
           </div>
           <div>
-            <div
-              className={
-                active_img === 1
-                  ? `absolute top-1/2 w-full sm:top-0 sm:h-full flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:left-20 ${leftright_animation}`
-                  : "hidden"
-              }
-            >
-              <div className="bg-[#ffd800] px-1 text-black w-max mb-3 text-sm font-bold">
-                JOIN NOW FOR $1
-              </div>
-              <div className="text-2xl mb-3 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                NBA 2K25
-              </div>
-              <div className="text-2xl mb-3 font-segoeui leading-[3.2rem] xl:text-5xl sm:text-[34px] ">
-                Play anywhere, win anywhere
-              </div>
-              <a
-                className="flex btn_parent mb-3 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
-                href="#"
+            <div className="flex justify-center">
+              <div
+                className={
+                  active_img === 1
+                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:left-20 ${leftright_animation}`
+                    : "hidden"
+                }
               >
-                <div className="font-extrabold btn_child_text text-sm font-seoproblack">
-                  learn more
+                <div className="bg-[#ffd800] px-1 text-black w-max mb-3 text-sm font-bold">
+                  JOIN NOW FOR $1
                 </div>
-                <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
-              </a>
+                <div className="text-2xl mb-3 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
+                  NBA 2K25
+                </div>
+                <div className="text-2xl mb-3 font-segoeui leading-[3.2rem] xl:text-5xl sm:text-[34px] ">
+                  Play anywhere, win anywhere
+                </div>
+                <a
+                  className="flex btn_parent mb-3 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
+                  href="#"
+                >
+                  <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                    learn more
+                  </div>
+                  <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
+                </a>
+              </div>
             </div>
-            <div
-              className={
-                active_img === 2
-                  ? `absolute top-1/2 w-full sm:top-0 sm:h-full flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
-                  : "hidden"
-              }
-            >
-              <div className="bg-[#ffd800] px-1 text-black w-max mb-3 text-sm font-bold">
-                JOIN NOW FOR $1
-              </div>
-              <div className="text-2xl mb-3 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                NBA 2K25
-              </div>
-              <div className="text-2xl mb-3 font-segoeui leading-[3.2rem] xl:text-5xl sm:text-[34px] ">
-                Play anywhere, win anywhere
-              </div>
-              <a
-                className="flex btn_parent mb-3 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
-                href="#"
+            <div className="flex justify-center">
+              <div
+                className={
+                  active_img === 2
+                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
+                    : "hidden"
+                }
               >
-                <div className="font-extrabold btn_child_text text-sm font-seoproblack">
-                  learn more
+                <div className="bg-[#ffd800] px-1 text-black w-max mb-3 text-sm font-bold">
+                  JOIN NOW FOR $1
                 </div>
-                <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
-              </a>
+                <div className="text-2xl mb-3 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
+                  NBA 2K25
+                </div>
+                <div className="text-2xl mb-3 font-segoeui leading-[3.2rem] xl:text-5xl sm:text-[34px] ">
+                  Play anywhere, win anywhere
+                </div>
+                <a
+                  className="flex btn_parent mb-3 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
+                  href="#"
+                >
+                  <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                    learn more
+                  </div>
+                  <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
+                </a>
+              </div>{" "}
             </div>
-            <div
-              className={
-                active_img === 3
-                  ? `absolute top-1/2 w-full text-black sm:top-0 sm:h-full flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:left-20 ${leftright_animation}`
-                  : "hidden"
-              }
-            >
-              <div className="bg-[#ffd800] px-1 text-black w-max mb-3 text-sm font-bold">
-                JOIN NOW FOR $1
-              </div>
-              <div className="text-2xl mb-3 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                NBA 2K25
-              </div>
-              <div className="text-2xl mb-3 font-segoeui leading-[3.2rem] xl:text-5xl sm:text-[34px] ">
-                Play anywhere, win anywhere
-              </div>
-              <a
-                className="flex btn_parent mb-3 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
-                href="#"
+            <div className="flex justify-center">
+              <div
+                className={
+                  active_img === 3
+                    ? `absolute top-1/2 w-10/12 mx-auto text-black sm:top-0 sm:h-full flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:left-20 ${leftright_animation}`
+                    : "hidden"
+                }
               >
-                <div className="font-extrabold btn_child_text text-sm font-seoproblack">
-                  learn more
+                <div className="bg-[#ffd800] px-1 text-black w-max mb-3 text-sm font-bold">
+                  JOIN NOW FOR $1
                 </div>
-                <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
-              </a>
+                <div className="text-2xl mb-3 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
+                  NBA 2K25
+                </div>
+                <div className="text-2xl mb-3 font-segoeui leading-[3.2rem] xl:text-5xl sm:text-[34px] ">
+                  Play anywhere, win anywhere
+                </div>
+                <a
+                  className="flex btn_parent mb-3 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
+                  href="#"
+                >
+                  <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                    learn more
+                  </div>
+                  <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
+                </a>
+              </div>{" "}
             </div>
           </div>
         </div>
