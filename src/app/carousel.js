@@ -204,7 +204,7 @@ export default function Carousel() {
               <div
                 className={
                   active_img === 1
-                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
+                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full text-center flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
                     : "hidden"
                 }
               >
@@ -232,7 +232,7 @@ export default function Carousel() {
               <div
                 className={
                   active_img === 2
-                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
+                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full text-center flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
                     : "hidden"
                 }
               >
@@ -272,7 +272,7 @@ export default function Carousel() {
               <div
                 className={
                   active_img === 3
-                    ? `absolute top-1/2 w-10/12 mx-auto text-black sm:top-0 sm:h-full flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:left-20 ${leftright_animation}`
+                    ? `absolute top-1/2 w-10/12 mx-auto text-black sm:top-0 sm:h-full text-center flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:left-20 ${leftright_animation}`
                     : "hidden"
                 }
               >

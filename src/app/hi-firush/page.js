@@ -5,6 +5,8 @@ import Carousel from "../carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useInView, InView } from "react-intersection-observer";
 
+import mainpic from "../../../public/hifi/mainpic.png";
+
 const Main_sec = () => {
   return (
     <section>
