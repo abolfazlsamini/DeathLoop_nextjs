@@ -200,7 +200,7 @@ const Component = () => {
                         </picture>
                       </div>
                       <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
-                        <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
+                        <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
                           LEGENDS IS HERE
                         </div>
                         <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -259,7 +259,7 @@ const Component = () => {
                         <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                           JOIN FREE
                         </div>
-                        <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
+                        <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
                           Manage everything with DG Relate
                         </div>
                         <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -371,7 +371,7 @@ const Component = () => {
                       <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                         JOIN NOW FOR $1
                       </div>
-                      <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
                         Outstanding Gameplay and Shooting Mechanics
                       </div>
                       <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -426,7 +426,7 @@ const Component = () => {
                       <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                         JOIN NOW FOR $1
                       </div>
-                      <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
                         Conquer The World , One strategic move ahead
                       </div>
                       <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -504,7 +504,7 @@ const Component = () => {
       </section>
       <section>
         <div className="lg:flex">
-          <div className="px-1 pt-1">
+          <div className="px-1 pt-1 md:w-1/2">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
@@ -537,7 +537,7 @@ const Component = () => {
                       <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                         JOIN NOW FOR $1
                       </div>
-                      <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
                         IT'S SHOWTIME IN ROCKET
                       </div>
                       <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -559,7 +559,7 @@ const Component = () => {
               )}
             </InView>
           </div>
-          <div className="px-1 pt-1">
+          <div className="px-1 pt-1 md:w-1/2">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
@@ -588,11 +588,11 @@ const Component = () => {
                         />
                       </picture>
                     </div>
-                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
+                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center sm:flex-col">
                       <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                         JOIN NOW FOR $1
                       </div>
-                      <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
                         Money Making Machine
                       </div>
                       <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -703,7 +703,7 @@ const Component = () => {
                         </picture>
                       </div>
                       <div className="bg-transparent text-black sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
-                        <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
+                        <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
                           Benefit Of Space Adventure
                         </div>
                         <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -760,7 +760,7 @@ const Component = () => {
                         <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                           JOIN NOW FOR $1
                         </div>
-                        <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
+                        <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
                           Break the rules in Vortex Legends
                         </div>
                         <div className="text-sm mb-5 xl:text-xl font-segoeui">
