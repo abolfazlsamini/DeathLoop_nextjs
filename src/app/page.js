@@ -504,7 +504,7 @@ const Component = () => {
       </section>
       <section>
         <div className="lg:flex">
-          <div className="px-1 pt-1">
+          <div className="px-1 pt-1 lg:w-1/2">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
@@ -559,7 +559,7 @@ const Component = () => {
               )}
             </InView>
           </div>
-          <div className="px-1 pt-1">
+          <div className="px-1 pt-1 lg:w-1/2">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
