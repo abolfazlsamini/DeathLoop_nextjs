@@ -30,7 +30,7 @@ const IconBar_sec = () => {
     <section>
       <div className=" max-w-[800px] sm:flex justify-center mx-auto pt-3">
         <div className="flex ">
-          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
               className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
@@ -38,12 +38,10 @@ const IconBar_sec = () => {
               <div>
                 <Image src={iconbar1} width={1000} height={1000} />
               </div>
-              <div className="text-xs font-seoproblack uppercase">
-                Game pass
-              </div>
+              <div className="text-sm font-seoproblack uppercase">DG GOLD</div>
             </a>
           </div>
-          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
               className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
@@ -51,10 +49,10 @@ const IconBar_sec = () => {
               <div>
                 <Image src={iconbar2} width={1000} height={1000} />
               </div>
-              <div className="text-xs font-seoproblack uppercase">Games</div>
+              <div className="text-sm font-seoproblack uppercase">Games</div>
             </a>
-          </div>{" "}
-          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+          </div>
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
               className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
@@ -62,12 +60,12 @@ const IconBar_sec = () => {
               <div>
                 <Image src={iconbar3} width={1000} height={1000} />
               </div>
-              <div className="text-xs font-seoproblack uppercase">consoles</div>
+              <div className="text-sm font-seoproblack uppercase">consoles</div>
             </a>
           </div>
         </div>
         <div className="flex">
-          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
               className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
@@ -75,12 +73,12 @@ const IconBar_sec = () => {
               <div>
                 <Image src={iconbar4} width={1000} height={1000} />
               </div>
-              <div className="text-xs font-seoproblack uppercase">
+              <div className="text-sm font-seoproblack uppercase">
                 accessories
               </div>
             </a>
-          </div>{" "}
-          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+          </div>
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
               className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
@@ -88,10 +86,10 @@ const IconBar_sec = () => {
               <div>
                 <Image src={iconbar5} width={1000} height={1000} />
               </div>
-              <div className="text-xs font-seoproblack uppercase">play</div>
+              <div className="text-sm font-seoproblack uppercase">play</div>
             </a>
-          </div>{" "}
-          <div className="text-[#107c10] mx-4 p-3 sm:p-1 text-center w-1/3 sm:w-[80px] xl:w-[90px]">
+          </div>
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
               className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
@@ -99,7 +97,7 @@ const IconBar_sec = () => {
               <div>
                 <Image src={iconbar6} width={1000} height={1000} />
               </div>
-              <div className="text-xs font-seoproblack uppercase">sign in</div>
+              <div className="text-sm font-seoproblack uppercase">sign in</div>
             </a>
           </div>
         </div>
@@ -118,7 +116,7 @@ const Component = () => {
     <section className="font-segoeuibold">
       <section>
         <div className="flex flex-wrap mt-9">
-          <div className="flex flex-wrap sm:w-1/2">
+          <div className="flex flex-wrap lg:w-1/2">
             <div className="px-1 sm:pr-1">
               <InView>
                 {({ inView, ref, entry }) => (
@@ -149,12 +147,12 @@ const Component = () => {
                         </picture>
                       </div>
                       <div className="sm:absolute sm:bottom-10 sm:bg-transparent bg-[#333] sm:w-full p-3 sm:px-10 xl:px-14 sm:flex sm:justify-center sm:flex-col">
-                        <div className="text-2xl mb-5 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                          Have an Amazon Fire TV stick? You can play Xbox. No
-                          console required.
+                        <div className="text-2xl mb-5 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
+                          Have an DG Gold Acount ? You can Play Playstation , No
+                          Console Required
                         </div>
-                        <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                          Play hundreds of games with Game Pass Ultimate.
+                        <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                          Play Hundreds Of Games With Dream Gleam Gold Acount
                         </div>
                         <a
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
@@ -172,7 +170,7 @@ const Component = () => {
               </InView>
             </div>
 
-            <div className="px-1 sm:pr-1">
+            <div className="px-1 pt-1">
               <InView>
                 {({ inView, ref, entry }) => (
                   <div
@@ -203,19 +201,20 @@ const Component = () => {
                       </div>
                       <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
                         <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
-                          Discover your next favorite game
+                          LEGENDS IS HERE
                         </div>
-                        <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                          Play new games on day one. Enjoy hundreds of
-                          high-quality games on console, PC, and cloud. Play
-                          together with friends.
+                        <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                          Choose from a lineup of outlaws, soldiers, misfits,
+                          and misanthropes, each with their own set of skills.
+                          The Vortex Games welcome all comers - survive long
+                          enough, and they call you a Legend
                         </div>
                         <a
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
                           <div className="font-extrabold  text-sm font-seoproblack">
-                            join now
+                            Learn More
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
                         </a>
@@ -226,8 +225,8 @@ const Component = () => {
               </InView>
             </div>
           </div>
-          <div className="flex flex-wrap sm:w-1/2 pt-1 sm:pt-0">
-            <div className="px-1 sm:pr-2 sm:pl-0">
+          <div className="flex flex-wrap lg:w-1/2 pt-1 lg:pt-0">
+            <div className="px-1">
               <InView>
                 {({ inView, ref, entry }) => (
                   <div
@@ -258,22 +257,21 @@ const Component = () => {
                       </div>
                       <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
                         <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
-                          JOIN NOW FOR $1
+                          JOIN FREE
                         </div>
                         <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
-                          Discover your next favorite game
+                          Manage everything with DG Relate
                         </div>
-                        <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                          Play new games on day one. Enjoy hundreds of
-                          high-quality games on console, PC, and cloud. Play
-                          together with friends.
+                        <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                          You can view and manage all your points, rewards,
+                          tokens, and more in your DG Relate account
                         </div>
                         <a
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                           href="#"
                         >
                           <div className="font-extrabold  text-sm font-seoproblack">
-                            join now
+                            Learn More
                           </div>
                           <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
                         </a>
@@ -283,7 +281,7 @@ const Component = () => {
                 )}
               </InView>
             </div>
-            <div className="sm:h-3/4 px-1 sm:pl-0 sm:px-2 py-1">
+            <div className="sm:h-3/4 px-1 pt-1">
               <InView>
                 {({ inView, ref, entry }) => (
                   <div
@@ -313,11 +311,12 @@ const Component = () => {
                         </picture>
                       </div>
                       <div className="sm:absolute sm:bottom-10 sm:bg-transparent bg-[#333] sm:w-full p-3 sm:px-10 xl:px-14 sm:flex sm:justify-center sm:flex-col">
-                        <div className="text-2xl mb-5 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                          Elevate your game
+                        <div className="text-2xl mb-5 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
+                          Be a shareholder of our games
                         </div>
-                        <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                          Stay on target and play on console, PC, and mobile
+                        <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                          You can participate in the company's profits by buying
+                          game shares
                         </div>
                         <a
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
@@ -338,8 +337,8 @@ const Component = () => {
         </div>
       </section>
       <section>
-        <div className="sm:flex">
-          <div className="px-1 sm:pr-0">
+        <div className="lg:flex">
+          <div className="px-1 pt-1">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
@@ -348,7 +347,7 @@ const Component = () => {
                     inView ? "animatedCard" : "opacity-10 translate-y-8"
                   }
                 >
-                  <div className="relative w-full  sm:flex sm:flex-row-reverse">
+                  <div className="relative w-full  sm:flex sm:flex-row">
                     <div className="sm:w-1/2 overflow-hidden">
                       <picture>
                         <source
@@ -373,19 +372,18 @@ const Component = () => {
                         JOIN NOW FOR $1
                       </div>
                       <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
-                        Discover your next favorite game
+                        Outstanding Gameplay and Shooting Mechanics
                       </div>
-                      <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                        Play new games on day one. Enjoy hundreds of
-                        high-quality games on console, PC, and cloud. Play
-                        together with friends.
+                      <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                        Tropicaloop offers an outstanding gameplay experience
+                        with smooth and responsive shooting mechanics
                       </div>
                       <a
                         className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                         href="#"
                       >
                         <div className="font-extrabold  text-sm font-seoproblack">
-                          join now
+                          Learn More
                         </div>
                         <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
                       </a>
@@ -395,7 +393,7 @@ const Component = () => {
               )}
             </InView>
           </div>
-          <div className="px-1 sm:pr-2 pt-1 sm:pt-0">
+          <div className="px-1 pt-1 ">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
@@ -429,19 +427,18 @@ const Component = () => {
                         JOIN NOW FOR $1
                       </div>
                       <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
-                        Discover your next favorite game
+                        Conquer The World , One strategic move ahead
                       </div>
-                      <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                        Play new games on day one. Enjoy hundreds of
-                        high-quality games on console, PC, and cloud. Play
-                        together with friends.
+                      <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                        Never underestimate your opponents; to conquer their
+                        territory, you must engage with a unique strategy
                       </div>
                       <a
                         className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
                         href="#"
                       >
                         <div className="font-extrabold  text-sm font-seoproblack">
-                          join now
+                          Learn More
                         </div>
                         <ChevronRightIcon className="size-5 btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
                       </a>
@@ -454,7 +451,7 @@ const Component = () => {
         </div>
       </section>
       <section>
-        <div className="px-1 sm:pr-2 pt-1">
+        <div className="px-1 pt-1">
           <InView>
             {({ inView, ref, entry }) => (
               <div
@@ -482,12 +479,12 @@ const Component = () => {
                     </picture>
                   </div>
                   <div className="sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:bg-transparent right-0 bg-[#333] sm:w-2/5 p-3 sm:px-10 xl:px-14 sm:flex sm:justify-center sm:flex-col">
-                    <div className="text-2xl mb-5 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                      Have an Amazon Fire TV stick? You can play Xbox. No
-                      console required.
+                    <div className="text-2xl mb-5 font-bold leading-[2.2rem] md:leading-10 xl:text-5xl sm:text-[20px] lg:text-[27px]">
+                      Have an DG Gold Acount ? You can Play XBOX , No Console
+                      Required
                     </div>
-                    <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                      Play hundreds of games with Game Pass Ultimate.
+                    <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                      Play Hundreds Of Games With Dream Gleam Gold Acount
                     </div>
                     <a
                       className="flex btn_parent mb-5 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
@@ -506,8 +503,8 @@ const Component = () => {
         </div>
       </section>
       <section>
-        <div className="sm:flex">
-          <div className="px-1 sm:pr-0 pt-1">
+        <div className="lg:flex">
+          <div className="px-1 pt-1">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
@@ -516,7 +513,7 @@ const Component = () => {
                     inView ? "animatedCard" : "opacity-10 translate-y-8"
                   }
                 >
-                  <div className="relative w-full  sm:flex sm:flex-row-reverse">
+                  <div className="relative w-full  sm:flex sm:flex-row">
                     <div className="sm:w-1/2 overflow-hidden">
                       <picture>
                         <source
@@ -541,12 +538,11 @@ const Component = () => {
                         JOIN NOW FOR $1
                       </div>
                       <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
-                        Discover your next favorite game
+                        IT'S SHOWTIME IN ROCKET
                       </div>
-                      <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                        Play new games on day one. Enjoy hundreds of
-                        high-quality games on console, PC, and cloud. Play
-                        together with friends.
+                      <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                        The Motorbiker arrives at Rocket with fresh playlists,
+                        additional events, and brand-new vehicles!
                       </div>
                       <a
                         className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
@@ -563,7 +559,7 @@ const Component = () => {
               )}
             </InView>
           </div>
-          <div className="px-1 sm:pr-2 pt-1">
+          <div className="px-1 pt-1">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
@@ -597,12 +593,12 @@ const Component = () => {
                         JOIN NOW FOR $1
                       </div>
                       <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
-                        Discover your next favorite game
+                        Money Making Machine
                       </div>
-                      <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                        Play new games on day one. Enjoy hundreds of
-                        high-quality games on console, PC, and cloud. Play
-                        together with friends.
+                      <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                        In MM Machine, by collecting coins and profits
+                        throughout the game, you receive airdrop tokens. These
+                        tokens can serve as a real source of income for you
                       </div>
                       <a
                         className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
@@ -623,8 +619,8 @@ const Component = () => {
       </section>
       <section>
         <div className="flex flex-wrap sm:flex-row-reverse">
-          <div className="flex flex-wrap sm:w-1/2">
-            <div className="px-1 sm:pr-2 pt-1 sm:pl-0">
+          <div className="flex flex-wrap lg:w-1/2">
+            <div className="px-1 pt-1">
               <InView>
                 {({ inView, ref, entry }) => (
                   <div
@@ -654,12 +650,12 @@ const Component = () => {
                         </picture>
                       </div>
                       <div className="sm:absolute sm:bottom-10 sm:bg-transparent bg-[#333] sm:w-full p-3 sm:px-10 xl:px-14 sm:flex sm:justify-center sm:flex-col">
-                        <div className="text-2xl mb-5 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                          Have an Amazon Fire TV stick? You can play Xbox. No
-                          console required.
+                        <div className="text-2xl mb-5 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
+                          CHECK OUT THE REVIEWS FROM CRITICS ON THE ROCKET
+                          MOTORBIKER!
                         </div>
-                        <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                          Play hundreds of games with Game Pass Ultimate.
+                        <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                          Play Hundreds if games with DG Gold
                         </div>
                         <a
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
@@ -677,7 +673,7 @@ const Component = () => {
               </InView>
             </div>
 
-            <div className="px-1 sm:pr-2 pt-1 sm:pl-0">
+            <div className="px-1 pt-1">
               <InView>
                 {({ inView, ref, entry }) => (
                   <div
@@ -708,12 +704,11 @@ const Component = () => {
                       </div>
                       <div className="bg-transparent text-black sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
                         <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
-                          Discover your next favorite game
+                          Benefit Of Space Adventure
                         </div>
-                        <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                          Play new games on day one. Enjoy hundreds of
-                          high-quality games on console, PC, and cloud. Play
-                          together with friends.
+                        <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                          have you ever thought about earning money while
+                          playing ? Space Adventure makes this path easy for you
                         </div>
                         <a
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
@@ -731,8 +726,8 @@ const Component = () => {
               </InView>
             </div>
           </div>
-          <div className="flex flex-wrap sm:w-1/2">
-            <div className="px-1 pt-1 sm:pl-1">
+          <div className="flex flex-wrap lg:w-1/2">
+            <div className="px-1 pt-1">
               <InView>
                 {({ inView, ref, entry }) => (
                   <div
@@ -766,12 +761,12 @@ const Component = () => {
                           JOIN NOW FOR $1
                         </div>
                         <div className="text-2xl mb-5 font-bold xl:text-3xl leading-6">
-                          Discover your next favorite game
+                          Break the rules in Vortex Legends
                         </div>
-                        <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                          Play new games on day one. Enjoy hundreds of
-                          high-quality games on console, PC, and cloud. Play
-                          together with friends.
+                        <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                          Upheaval with Solos Takeover, new Legend Alter, a
+                          shattered Broken Moon, customizable Vortex Artifacts,
+                          and more
                         </div>
                         <a
                           className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
@@ -788,7 +783,7 @@ const Component = () => {
                 )}
               </InView>
             </div>
-            <div className="px-1 pt-1 sm:pl-1">
+            <div className="px-1 pt-1">
               <InView>
                 {({ inView, ref, entry }) => (
                   <div
@@ -818,10 +813,10 @@ const Component = () => {
                         </picture>
                       </div>
                       <div className="sm:absolute sm:bottom-10 sm:bg-transparent bg-[#333] sm:w-full p-3 sm:px-10 xl:px-14 sm:flex sm:justify-center sm:flex-col">
-                        <div className="text-2xl mb-5 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
+                        <div className="text-2xl mb-5 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
                           Elevate your game
                         </div>
-                        <div className="text-xs mb-5 xl:text-xl font-segoeui">
+                        <div className="text-sm mb-5 xl:text-xl font-segoeui">
                           Stay on target and play on console, PC, and mobile
                         </div>
                         <a
@@ -843,7 +838,7 @@ const Component = () => {
         </div>
       </section>
       <section>
-        <div className="px-1 sm:pr-1 pt-1">
+        <div className="px-1 pt-1">
           <InView>
             {({ inView, ref, entry }) => (
               <div
@@ -871,12 +866,11 @@ const Component = () => {
                     </picture>
                   </div>
                   <div className="sm:absolute text-black sm:top-1/2 sm:-translate-y-1/2 sm:bg-transparent right-0 bg-white sm:w-2/5 p-3 sm:px-10 xl:px-14 sm:flex sm:justify-center sm:flex-col">
-                    <div className="text-2xl mb-5 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                      Have an Amazon Fire TV stick? You can play Xbox. No
-                      console required.
+                    <div className="text-2xl mb-5 font-bold leading-[2.2rem] md:leading-10 xl:text-5xl sm:text-[20px] lg:text-[27px]">
+                      Dream Gleam SHOP
                     </div>
-                    <div className="text-xs mb-5 xl:text-xl font-segoeui">
-                      Play hundreds of games with Game Pass Ultimate.
+                    <div className="text-sm mb-5 xl:text-xl font-segoeui">
+                      Check out the latest Accessories
                     </div>
                     <a
                       className="flex btn_parent mb-5 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"

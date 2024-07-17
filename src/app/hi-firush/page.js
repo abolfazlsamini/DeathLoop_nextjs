@@ -15,6 +15,6 @@ const Main_sec = () => {
   );
 };
 
-export default function Xbox() {
+export default function HifiRush() {
   return <main className="bg-white"></main>;
 }

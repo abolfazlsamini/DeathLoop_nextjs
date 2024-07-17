@@ -53,7 +53,7 @@ export default function Carousel() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      next();
+      // next();
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, 10000);
 
@@ -125,11 +125,11 @@ export default function Carousel() {
           >
             <picture>
               <source
-                srcSet={`./xbox/carousel_${active_img}_mobile.jpg`}
+                srcSet={`./xbox/carousel_1_mobile.jpg`}
                 media="(max-width:639.95px)"
               ></source>
               <source
-                srcSet={`./xbox/carousel_${active_img}_pc.jpg`}
+                srcSet={`./xbox/carousel_1_pc.jpg`}
                 media="(min-width:640px)"
               ></source>
 
@@ -152,11 +152,11 @@ export default function Carousel() {
           >
             <picture>
               <source
-                srcSet={`./xbox/carousel_${active_img}_mobile.jpg`}
+                srcSet={`./xbox/carousel_2_mobile.jpg`}
                 media="(max-width:639.95px)"
               ></source>
               <source
-                srcSet={`./xbox/carousel_${active_img}_pc.jpg`}
+                srcSet={`./xbox/carousel_2_pc.jpg`}
                 media="(min-width:640px)"
               ></source>
 
@@ -179,11 +179,11 @@ export default function Carousel() {
           >
             <picture>
               <source
-                srcSet={`./xbox/carousel_${active_img}_mobile.jpg`}
+                srcSet={`./xbox/carousel_3_mobile.jpg`}
                 media="(max-width:639.95px)"
               ></source>
               <source
-                srcSet={`./xbox/carousel_${active_img}_pc.jpg`}
+                srcSet={`./xbox/carousel_3_pc.jpg`}
                 media="(min-width:640px)"
               ></source>
 
@@ -209,13 +209,13 @@ export default function Carousel() {
                 }
               >
                 <div className="bg-[#ffd800] px-1 text-black w-max mb-3 text-sm font-bold">
-                  JOIN NOW FOR $1
+                  Coming soon to DG GOLD
                 </div>
-                <div className="text-2xl mb-3 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                  NBA 2K25
+                <div className="text-2xl mb-3 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
+                  TROPICALOOP
                 </div>
-                <div className="text-2xl mb-3 font-segoeui leading-[3.2rem] xl:text-5xl sm:text-[34px] ">
-                  Play anywhere, win anywhere
+                <div className="text-2xl mb-5 font-segoeui leading-[2rem] xl:text-5xl sm:text-[30px] ">
+                  A Strong Storyline that Keeps You Hooked
                 </div>
                 <a
                   className="flex btn_parent mb-3 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
@@ -237,24 +237,36 @@ export default function Carousel() {
                 }
               >
                 <div className="bg-[#ffd800] px-1 text-black w-max mb-3 text-sm font-bold">
-                  JOIN NOW FOR $1
+                  Coming Soon To DG GOLD
                 </div>
-                <div className="text-2xl mb-3 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                  NBA 2K25
+                <div className="text-2xl mb-3 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
+                  VORTEX LEGENDS
                 </div>
-                <div className="text-2xl mb-3 font-segoeui leading-[3.2rem] xl:text-5xl sm:text-[34px] ">
-                  Play anywhere, win anywhere
+                <div className="text-2xl mb-5 font-segoeui leading-[2rem] xl:text-5xl sm:text-[30px] ">
+                  Pick your character. Round up your squad. Show everyone what
+                  Legends are made of
                 </div>
-                <a
-                  className="flex btn_parent mb-3 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
-                  href="#"
-                >
-                  <div className="font-extrabold btn_child_text text-sm font-seoproblack">
-                    learn more
-                  </div>
-                  <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
-                </a>
-              </div>{" "}
+                <div className="flex items-center">
+                  <a
+                    className="flex btn_parent mb-3 text-lg uppercase cursor-pointer mr-3 bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
+                    href="#"
+                  >
+                    <div className="font-extrabold btn_child_text text-sm font-seoproblack">
+                      pre order now
+                    </div>
+                    <ChevronRightIcon className="size-5 text-[#054b16] hover:text-[#054b16] btn_child_arrow hover:translate-x-12"></ChevronRightIcon>
+                  </a>
+                  <a
+                    className="flex btn_parent mb-5 text-lg uppercase cursor-pointer "
+                    href="#"
+                  >
+                    <div className="font-extrabold text-[#9bf00b] text-sm font-seoproblack">
+                      learn more
+                    </div>
+                    <ChevronRightIcon className="size-5 btn_child_arrow text-[#9bf00b] hover:translate-x-12"></ChevronRightIcon>
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="flex justify-center">
               <div
@@ -267,14 +279,14 @@ export default function Carousel() {
                 <div className="bg-[#ffd800] px-1 text-black w-max mb-3 text-sm font-bold">
                   JOIN NOW FOR $1
                 </div>
-                <div className="text-2xl mb-3 font-bold leading-[3.2rem] xl:text-5xl sm:text-[36px] ">
-                  NBA 2K25
+                <div className="text-2xl mb-3 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
+                  ROCKET MOTORBIKER
                 </div>
-                <div className="text-2xl mb-3 font-segoeui leading-[3.2rem] xl:text-5xl sm:text-[34px] ">
-                  Play anywhere, win anywhere
+                <div className="text-2xl mb-5 font-segoeui leading-[2rem] xl:text-5xl sm:text-[30px] ">
+                  Play With Any Game Platfrom . Win Anywhere
                 </div>
                 <a
-                  className="flex btn_parent mb-3 text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6 py-2"
+                  className="flex btn_parent text-lg uppercase cursor-pointer bg-[#9bf00b] text-[#054b16] hover:text-[#054b16] w-max px-6"
                   href="#"
                 >
                   <div className="font-extrabold btn_child_text text-sm font-seoproblack">
