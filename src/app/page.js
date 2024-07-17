@@ -29,35 +29,35 @@ const IconBar_sec = () => {
   return (
     <section>
       <div className=" max-w-[800px] sm:flex justify-center mx-auto pt-3">
-        <div className="flex ">
-          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
+        <div className="flex">
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 sm:mx-5 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
-              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              className="flex flex-col hover:text-[#107c10] items-center btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
             >
-              <div>
+              <div className="px-3 sm:px-0">
                 <Image src={iconbar1} width={1000} height={1000} />
               </div>
               <div className="text-sm font-seoproblack uppercase">DG GOLD</div>
             </a>
           </div>
-          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 sm:mx-5 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
-              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              className="flex flex-col hover:text-[#107c10] items-center btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
             >
-              <div>
+              <div className="px-3 sm:px-0">
                 <Image src={iconbar2} width={1000} height={1000} />
               </div>
               <div className="text-sm font-seoproblack uppercase">Games</div>
             </a>
           </div>
-          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 sm:mx-5 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
-              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              className="flex flex-col hover:text-[#107c10] items-center btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
             >
-              <div>
+              <div className="px-3 sm:px-0">
                 <Image src={iconbar3} width={1000} height={1000} />
               </div>
               <div className="text-sm font-seoproblack uppercase">consoles</div>
@@ -65,12 +65,12 @@ const IconBar_sec = () => {
           </div>
         </div>
         <div className="flex">
-          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 sm:mx-5 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
-              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              className="flex flex-col hover:text-[#107c10] items-center btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
             >
-              <div>
+              <div className="px-3 sm:px-0">
                 <Image src={iconbar4} width={1000} height={1000} />
               </div>
               <div className="text-sm font-seoproblack uppercase">
@@ -78,23 +78,23 @@ const IconBar_sec = () => {
               </div>
             </a>
           </div>
-          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 sm:mx-5 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
-              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              className="flex flex-col hover:text-[#107c10] items-center btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
             >
-              <div>
+              <div className="px-3 sm:px-0">
                 <Image src={iconbar5} width={1000} height={1000} />
               </div>
               <div className="text-sm font-seoproblack uppercase">play</div>
             </a>
           </div>
-          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
+          <div className="text-[#107c10] mx-auto max-w-[130px] md:mx-8 sm:mx-5 px-5 sm:p-1 text-center sm:w-[75px] xl:w-[90px]">
             <a
-              className="flex flex-col hover:text-[#107c10]  btn_parent mb-5 text-base uppercase cursor-pointer "
+              className="flex flex-col hover:text-[#107c10] items-center btn_parent mb-5 text-base uppercase cursor-pointer "
               href="#"
             >
-              <div>
+              <div className="px-3 sm:px-0">
                 <Image src={iconbar6} width={1000} height={1000} />
               </div>
               <div className="text-sm font-seoproblack uppercase">sign in</div>
@@ -199,8 +199,8 @@ const Component = () => {
                           />
                         </picture>
                       </div>
-                      <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
-                        <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-7 sm:flex sm:justify-center  sm:flex-col">
+                        <div className="text-1xl md:text-lg mb-5 font-bold xl:text-2xl leading-6">
                           LEGENDS IS HERE
                         </div>
                         <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -255,11 +255,11 @@ const Component = () => {
                           />
                         </picture>
                       </div>
-                      <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
+                      <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-7 sm:flex sm:justify-center  sm:flex-col">
                         <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                           JOIN FREE
                         </div>
-                        <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
+                        <div className="text-1xl md:text-lg mb-5 font-bold xl:text-2xl leading-6">
                           Manage everything with DG Relate
                         </div>
                         <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -367,11 +367,11 @@ const Component = () => {
                         />
                       </picture>
                     </div>
-                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
+                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-7 sm:flex sm:justify-center  sm:flex-col">
                       <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                         JOIN NOW FOR $1
                       </div>
-                      <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="text-1xl md:text-lg mb-5 font-bold xl:text-2xl leading-6">
                         Outstanding Gameplay and Shooting Mechanics
                       </div>
                       <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -422,11 +422,11 @@ const Component = () => {
                         />
                       </picture>
                     </div>
-                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
+                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-7 sm:flex sm:justify-center  sm:flex-col">
                       <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                         JOIN NOW FOR $1
                       </div>
-                      <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="text-1xl md:text-lg mb-5 font-bold xl:text-2xl leading-6">
                         Conquer The World , One strategic move ahead
                       </div>
                       <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -533,11 +533,11 @@ const Component = () => {
                         />
                       </picture>
                     </div>
-                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
+                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-7 sm:flex sm:justify-center  sm:flex-col">
                       <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                         JOIN NOW FOR $1
                       </div>
-                      <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="text-1xl md:text-lg mb-5 font-bold xl:text-2xl leading-6">
                         IT'S SHOWTIME IN ROCKET
                       </div>
                       <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -588,11 +588,11 @@ const Component = () => {
                         />
                       </picture>
                     </div>
-                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center sm:flex-col">
+                    <div className="bg-xbox_green sm:w-1/2 p-3 xl:px-7 sm:flex sm:justify-center  sm:flex-col">
                       <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                         JOIN NOW FOR $1
                       </div>
-                      <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="text-1xl md:text-lg mb-5 font-bold xl:text-2xl leading-6">
                         Money Making Machine
                       </div>
                       <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -702,8 +702,8 @@ const Component = () => {
                           />
                         </picture>
                       </div>
-                      <div className="bg-transparent text-black sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
-                        <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
+                      <div className="bg-transparent text-black sm:w-1/2 p-3 xl:px-7 sm:flex sm:justify-center  sm:flex-col">
+                        <div className="text-1xl md:text-lg mb-5 font-bold xl:text-2xl leading-6">
                           Benefit Of Space Adventure
                         </div>
                         <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -756,11 +756,11 @@ const Component = () => {
                           />
                         </picture>
                       </div>
-                      <div className="bg-transparent text-black sm:w-1/2 p-3 xl:px-14 sm:flex sm:justify-center  sm:flex-col">
+                      <div className="bg-transparent text-black sm:w-1/2 p-3 xl:px-7 sm:flex sm:justify-center  sm:flex-col">
                         <div className="bg-[#ffd800] px-1 text-black w-max mb-5 text-sm font-bold">
                           JOIN NOW FOR $1
                         </div>
-                        <div className="text-2xl md:text-lg mb-5 font-bold xl:text-3xl leading-6">
+                        <div className="text-1xl md:text-lg mb-5 font-bold xl:text-2xl leading-6">
                           Break the rules in Vortex Legends
                         </div>
                         <div className="text-sm mb-5 xl:text-xl font-segoeui">
@@ -898,7 +898,7 @@ export default function Xbox() {
       <title>Home</title>
       <Carousel />
       <IconBar_sec />
-      <div className="mt-8">
+      <div className="mt-8 max-w-[1980px] mx-auto">
         <Component />
       </div>
     </main>

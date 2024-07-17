@@ -53,7 +53,7 @@ export default function Carousel() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // next();
+      next();
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, 10000);
 
@@ -204,7 +204,7 @@ export default function Carousel() {
               <div
                 className={
                   active_img === 1
-                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full text-center flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
+                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full text-center sm:text-left flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
                     : "hidden"
                 }
               >
@@ -214,7 +214,7 @@ export default function Carousel() {
                 <div className="text-2xl mb-3 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
                   TROPICALOOP
                 </div>
-                <div className="text-2xl mb-5 font-segoeui leading-[2rem] xl:text-5xl sm:text-[30px] ">
+                <div className="text-xl mb-5 font-segoeui sm:leading-[1.6rem] xl:text-3xl sm:text-[20px] ">
                   A Strong Storyline that Keeps You Hooked
                 </div>
                 <a
@@ -232,7 +232,7 @@ export default function Carousel() {
               <div
                 className={
                   active_img === 2
-                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full text-center flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
+                    ? `absolute top-1/2 w-10/12 mx-auto sm:top-0 sm:h-full text-center sm:text-left flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:right-20 ${leftright_animation}`
                     : "hidden"
                 }
               >
@@ -242,9 +242,10 @@ export default function Carousel() {
                 <div className="text-2xl mb-3 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
                   VORTEX LEGENDS
                 </div>
-                <div className="text-2xl mb-5 font-segoeui leading-[2rem] xl:text-5xl sm:text-[30px] ">
-                  Pick your character. Round up your squad. Show everyone what
-                  Legends are made of
+                <div className="text-xl mb-5 font-segoeui sm:leading-[1.6rem] xl:text-3xl sm:text-[20px] ">
+                  Pick your character, Round up your squad.
+                  <br />
+                  Show everyone what Legends are made of
                 </div>
                 <div className="flex items-center">
                   <a
@@ -272,7 +273,7 @@ export default function Carousel() {
               <div
                 className={
                   active_img === 3
-                    ? `absolute top-1/2 w-10/12 mx-auto text-black sm:top-0 sm:h-full text-center flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:left-20 ${leftright_animation}`
+                    ? `absolute top-1/2 w-10/12 mx-auto text-black sm:top-0 sm:h-full text-center sm:text-left flex items-center sm:items-start mt-10 sm:mt-0 justify-center flex-col sm:w-1/3 sm:left-20 ${leftright_animation}`
                     : "hidden"
                 }
               >
@@ -282,7 +283,7 @@ export default function Carousel() {
                 <div className="text-2xl mb-3 font-bold leading-[2rem] xl:text-5xl sm:text-[36px] ">
                   ROCKET MOTORBIKER
                 </div>
-                <div className="text-2xl mb-5 font-segoeui leading-[2rem] xl:text-5xl sm:text-[30px] ">
+                <div className="text-xl mb-5 font-segoeui sm:leading-[1.6rem] xl:text-3xl sm:text-[20px] ">
                   Play With Any Game Platfrom . Win Anywhere
                 </div>
                 <a

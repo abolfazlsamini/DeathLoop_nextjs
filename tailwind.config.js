@@ -32,6 +32,8 @@ module.exports = {
           "linear-gradient(transparent 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.75) 60%, rgb(0, 0, 0) 90%)",
         latest7:
           "linear-gradient(transparent 0%, rgba(73, 90, 84, 0.5) 25%, rgba(73, 90, 84, 0.75) 60%, rgb(73, 90, 84) 90%)",
+        hifi_blue_gradient:
+          "linear-gradient(to bottom,transparent 40%, rgb(1, 74, 185) 100%)",
       },
       backgroundColor: {
         deathloop_orange: "#cf5d20",
@@ -42,6 +44,7 @@ module.exports = {
         deathloop_gray: "rgba(220,219,200,0.7)",
         xbox_green: "#107c10 ",
         xbox_yellow: "rgb(255, 216, 0)",
+        hifi_blue: "rgb(1, 74, 185)",
       },
       textColor: {
         deathloop_orange: "#cf5d20",

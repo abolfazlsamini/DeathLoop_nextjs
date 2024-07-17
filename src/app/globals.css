@@ -14,8 +14,16 @@
     @apply font-univers55 text-base leading-7 font-thin;
     text-shadow: 0px 0px 10px black;
   }
-  * {
-    /* outline: 1px solid #f00; */
+
+  svg path:hover {
+    fill: #004aba;
+
+    cursor: pointer;
+  }
+  path div:hover {
+    fill: #004aba;
+
+    cursor: pointer;
   }
   img {
     user-drag: none;
@@ -33,6 +41,13 @@
     -webkit-user-select: none;
     -ms-user-select: none;
   }
+  /* HI-FI Rush*/
+  .main_bg {
+    background-image: url(../../public/hifi/main_bg.webp);
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+
   /* XBOX */
   .btn_parent {
     text-underline-offset: 7px;
